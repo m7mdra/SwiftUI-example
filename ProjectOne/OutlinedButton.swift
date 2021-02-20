@@ -36,8 +36,8 @@ struct OutlinedButton : View{
 struct OutlinedButton_Previews: PreviewProvider {
     static var previews: some View {
         VStack{
-              MasterButton(action:{},label: "SIGN IN").background(with: Color.black)
-        OutlinedButton(action:{},label: "CREATE  ACCOUNT").background(with: Color.black)
+              MasterButton(action:{},label: "SIGN IN").background( Color.black)
+        OutlinedButton(action:{},label: "CREATE  ACCOUNT").background(Color.black)
     }
     }
 }

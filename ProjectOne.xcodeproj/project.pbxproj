@@ -7,21 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F00ADD6925E0C82000BEBD09 /* UIScreen+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00ADD6825E0C82000BEBD09 /* UIScreen+Extensions.swift */; };
+		F026B37C25E0C04E00B8917D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F026B37B25E0C04E00B8917D /* ContentView.swift */; };
 		F0BFEA3B25E093C100CE0877 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0BFEA3A25E093C100CE0877 /* AppDelegate.swift */; };
 		F0BFEA3D25E093C100CE0877 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0BFEA3C25E093C100CE0877 /* SceneDelegate.swift */; };
 		F0BFEA4125E093C400CE0877 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0BFEA4025E093C400CE0877 /* Assets.xcassets */; };
 		F0BFEA4425E093C400CE0877 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0BFEA4325E093C400CE0877 /* Preview Assets.xcassets */; };
 		F0BFEA4725E093C400CE0877 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0BFEA4525E093C400CE0877 /* LaunchScreen.storyboard */; };
-		F0BFEA4F25E093EB00CE0877 /* fonts in Resources */ = {isa = PBXBuildFile; fileRef = F0BFEA4E25E093EB00CE0877 /* fonts */; };
 		F0BFEA5725E0942600CE0877 /* OutlinedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0BFEA5025E0942500CE0877 /* OutlinedButton.swift */; };
 		F0BFEA5825E0942600CE0877 /* PageControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0BFEA5125E0942500CE0877 /* PageControl.swift */; };
 		F0BFEA5A25E0942600CE0877 /* MasterButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0BFEA5325E0942500CE0877 /* MasterButton.swift */; };
 		F0BFEA5B25E0942600CE0877 /* Color+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0BFEA5425E0942500CE0877 /* Color+Extensions.swift */; };
 		F0BFEA5C25E0942600CE0877 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0BFEA5525E0942500CE0877 /* PageViewController.swift */; };
-		F0BFEA5D25E0942600CE0877 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0BFEA5625E0942600CE0877 /* ContentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F00ADD6825E0C82000BEBD09 /* UIScreen+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIScreen+Extensions.swift"; sourceTree = "<group>"; };
+		F00ADD6B25E0C90B00BEBD09 /* Avenir-Heavy.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Avenir-Heavy.otf"; sourceTree = "<group>"; };
+		F00ADD6C25E0C90B00BEBD09 /* Avenir-Book.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Avenir-Book.otf"; sourceTree = "<group>"; };
+		F00ADD6D25E0C90B00BEBD09 /* Avenir-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Avenir-Black.otf"; sourceTree = "<group>"; };
+		F00ADD6E25E0C90B00BEBD09 /* Avenir-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Avenir-Medium.otf"; sourceTree = "<group>"; };
+		F00ADD6F25E0C90B00BEBD09 /* Avenir-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Avenir-Light.otf"; sourceTree = "<group>"; };
+		F00ADD7025E0C90B00BEBD09 /* Avenir-Roman.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Avenir-Roman.otf"; sourceTree = "<group>"; };
+		F026B37B25E0C04E00B8917D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F0BFEA3725E093C100CE0877 /* ProjectOne.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProjectOne.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0BFEA3A25E093C100CE0877 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F0BFEA3C25E093C100CE0877 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -29,13 +37,11 @@
 		F0BFEA4325E093C400CE0877 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F0BFEA4625E093C400CE0877 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F0BFEA4825E093C400CE0877 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F0BFEA4E25E093EB00CE0877 /* fonts */ = {isa = PBXFileReference; lastKnownFileType = folder; name = fonts; path = ../../testProject/projectOne/fonts; sourceTree = "<group>"; };
 		F0BFEA5025E0942500CE0877 /* OutlinedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OutlinedButton.swift; sourceTree = "<group>"; };
 		F0BFEA5125E0942500CE0877 /* PageControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageControl.swift; sourceTree = "<group>"; };
 		F0BFEA5325E0942500CE0877 /* MasterButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MasterButton.swift; sourceTree = "<group>"; };
 		F0BFEA5425E0942500CE0877 /* Color+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Color+Extensions.swift"; sourceTree = "<group>"; };
 		F0BFEA5525E0942500CE0877 /* PageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
-		F0BFEA5625E0942600CE0877 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ContentView.swift; path = ../../testProject/projectOne/ContentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +55,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F00ADD6A25E0C90200BEBD09 /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				F00ADD6D25E0C90B00BEBD09 /* Avenir-Black.otf */,
+				F00ADD6C25E0C90B00BEBD09 /* Avenir-Book.otf */,
+				F00ADD6B25E0C90B00BEBD09 /* Avenir-Heavy.otf */,
+				F00ADD6F25E0C90B00BEBD09 /* Avenir-Light.otf */,
+				F00ADD6E25E0C90B00BEBD09 /* Avenir-Medium.otf */,
+				F00ADD7025E0C90B00BEBD09 /* Avenir-Roman.otf */,
+			);
+			path = fonts;
+			sourceTree = "<group>";
+		};
 		F0BFEA2E25E093C100CE0877 = {
 			isa = PBXGroup;
 			children = (
@@ -68,19 +87,20 @@
 		F0BFEA3925E093C100CE0877 /* ProjectOne */ = {
 			isa = PBXGroup;
 			children = (
+				F00ADD6A25E0C90200BEBD09 /* fonts */,
 				F0BFEA5425E0942500CE0877 /* Color+Extensions.swift */,
-				F0BFEA5625E0942600CE0877 /* ContentView.swift */,
 				F0BFEA5325E0942500CE0877 /* MasterButton.swift */,
 				F0BFEA5025E0942500CE0877 /* OutlinedButton.swift */,
 				F0BFEA5125E0942500CE0877 /* PageControl.swift */,
 				F0BFEA5525E0942500CE0877 /* PageViewController.swift */,
-				F0BFEA4E25E093EB00CE0877 /* fonts */,
 				F0BFEA3A25E093C100CE0877 /* AppDelegate.swift */,
 				F0BFEA3C25E093C100CE0877 /* SceneDelegate.swift */,
 				F0BFEA4025E093C400CE0877 /* Assets.xcassets */,
 				F0BFEA4525E093C400CE0877 /* LaunchScreen.storyboard */,
 				F0BFEA4825E093C400CE0877 /* Info.plist */,
 				F0BFEA4225E093C400CE0877 /* Preview Content */,
+				F026B37B25E0C04E00B8917D /* ContentView.swift */,
+				F00ADD6825E0C82000BEBD09 /* UIScreen+Extensions.swift */,
 			);
 			path = ProjectOne;
 			sourceTree = "<group>";
@@ -154,7 +174,6 @@
 				F0BFEA4725E093C400CE0877 /* LaunchScreen.storyboard in Resources */,
 				F0BFEA4425E093C400CE0877 /* Preview Assets.xcassets in Resources */,
 				F0BFEA4125E093C400CE0877 /* Assets.xcassets in Resources */,
-				F0BFEA4F25E093EB00CE0877 /* fonts in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -166,11 +185,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				F0BFEA5A25E0942600CE0877 /* MasterButton.swift in Sources */,
+				F00ADD6925E0C82000BEBD09 /* UIScreen+Extensions.swift in Sources */,
 				F0BFEA5825E0942600CE0877 /* PageControl.swift in Sources */,
+				F026B37C25E0C04E00B8917D /* ContentView.swift in Sources */,
 				F0BFEA5B25E0942600CE0877 /* Color+Extensions.swift in Sources */,
 				F0BFEA3B25E093C100CE0877 /* AppDelegate.swift in Sources */,
 				F0BFEA3D25E093C100CE0877 /* SceneDelegate.swift in Sources */,
-				F0BFEA5D25E0942600CE0877 /* ContentView.swift in Sources */,
 				F0BFEA5C25E0942600CE0877 /* PageViewController.swift in Sources */,
 				F0BFEA5725E0942600CE0877 /* OutlinedButton.swift in Sources */,
 			);
