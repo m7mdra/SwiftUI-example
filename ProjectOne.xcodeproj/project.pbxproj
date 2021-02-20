@@ -20,6 +20,8 @@
 		F0BFEA5A25E0942600CE0877 /* MasterButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0BFEA5325E0942500CE0877 /* MasterButton.swift */; };
 		F0BFEA5B25E0942600CE0877 /* Color+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0BFEA5425E0942500CE0877 /* Color+Extensions.swift */; };
 		F0BFEA5C25E0942600CE0877 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0BFEA5525E0942500CE0877 /* PageViewController.swift */; };
+		F0FAB08E25E15EC800E0B3E2 /* UnderlineTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0FAB08D25E15EC800E0B3E2 /* UnderlineTextField.swift */; };
+		F0FAB09025E165B800E0B3E2 /* SocialButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0FAB08F25E165B800E0B3E2 /* SocialButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +46,8 @@
 		F0BFEA5325E0942500CE0877 /* MasterButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MasterButton.swift; sourceTree = "<group>"; };
 		F0BFEA5425E0942500CE0877 /* Color+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Color+Extensions.swift"; sourceTree = "<group>"; };
 		F0BFEA5525E0942500CE0877 /* PageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
+		F0FAB08D25E15EC800E0B3E2 /* UnderlineTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnderlineTextField.swift; sourceTree = "<group>"; };
+		F0FAB08F25E165B800E0B3E2 /* SocialButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +81,8 @@
 				F0BFEA5025E0942500CE0877 /* OutlinedButton.swift */,
 				F0BFEA5125E0942500CE0877 /* PageControl.swift */,
 				F0BFEA5525E0942500CE0877 /* PageViewController.swift */,
+				F0FAB08D25E15EC800E0B3E2 /* UnderlineTextField.swift */,
+				F0FAB08F25E165B800E0B3E2 /* SocialButton.swift */,
 			);
 			path = views;
 			sourceTree = "<group>";
@@ -215,9 +221,11 @@
 				F0B1E76E25E0D396005041F6 /* RegisterView.swift in Sources */,
 				F00ADD6925E0C82000BEBD09 /* UIScreen+Extensions.swift in Sources */,
 				F0BFEA5825E0942600CE0877 /* PageControl.swift in Sources */,
+				F0FAB08E25E15EC800E0B3E2 /* UnderlineTextField.swift in Sources */,
 				F026B37C25E0C04E00B8917D /* OnBoardingView.swift in Sources */,
 				F0BFEA5B25E0942600CE0877 /* Color+Extensions.swift in Sources */,
 				F0BFEA3B25E093C100CE0877 /* AppDelegate.swift in Sources */,
+				F0FAB09025E165B800E0B3E2 /* SocialButton.swift in Sources */,
 				F0BFEA3D25E093C100CE0877 /* SceneDelegate.swift in Sources */,
 				F0BFEA5C25E0942600CE0877 /* PageViewController.swift in Sources */,
 				F0BFEA5725E0942600CE0877 /* OutlinedButton.swift in Sources */,

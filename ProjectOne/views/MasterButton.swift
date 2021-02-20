@@ -23,7 +23,7 @@ struct MasterButton : View{
              .padding()
         }
        
-        .background(Color(hex:"#D7A324"))
+        .background(Color(hex:"#CC9D76"))
             .cornerRadius(22)
             
         
