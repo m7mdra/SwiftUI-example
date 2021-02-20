@@ -56,5 +56,14 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>UIAppFonts</key>
+	<array>
+		<string>Avenir-Black.otf</string>
+		<string>Avenir-Book.otf</string>
+		<string>Avenir-Heavy.otf</string>
+		<string>Avenir-Light.otf</string>
+		<string>Avenir-Medium.otf</string>
+		<string>Avenir-Roman.otf</string>
+	</array>
 </dict>
 </plist>
