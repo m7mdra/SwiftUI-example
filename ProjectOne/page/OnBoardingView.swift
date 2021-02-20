@@ -8,7 +8,7 @@
 
 import Foundation
 import SwiftUI
-struct ContentView : View {
+struct OnBoardingView : View {
     @State var currentPage:Int = 0
     var body: some View{
         ZStack(alignment:.top){
@@ -18,7 +18,7 @@ struct ContentView : View {
                 AnyView(OnBoardingThirdPage())], currentPage: $currentPage)
             PageControl(numberOfPages: 3, currentPage: $currentPage)
             
-        }
+        }.preferredColorScheme(.dark)
     }
 }
 
@@ -110,8 +110,12 @@ struct OnBoardingThirdPage : View{
         }
     }
 }
-struct ContentView_Previews: PreviewProvider {
+struct OnBoardingView_Previews: PreviewProvider {
+
     static var previews: some View {
-        ContentView()
+
+        OnBoardingView()
+
     }
+
 }

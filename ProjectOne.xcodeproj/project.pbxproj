@@ -8,7 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		F00ADD6925E0C82000BEBD09 /* UIScreen+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00ADD6825E0C82000BEBD09 /* UIScreen+Extensions.swift */; };
-		F026B37C25E0C04E00B8917D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F026B37B25E0C04E00B8917D /* ContentView.swift */; };
+		F026B37C25E0C04E00B8917D /* OnBoardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F026B37B25E0C04E00B8917D /* OnBoardingView.swift */; };
+		F0B1E76E25E0D396005041F6 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B1E76D25E0D396005041F6 /* RegisterView.swift */; };
 		F0BFEA3B25E093C100CE0877 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0BFEA3A25E093C100CE0877 /* AppDelegate.swift */; };
 		F0BFEA3D25E093C100CE0877 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0BFEA3C25E093C100CE0877 /* SceneDelegate.swift */; };
 		F0BFEA4125E093C400CE0877 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0BFEA4025E093C400CE0877 /* Assets.xcassets */; };
@@ -29,7 +30,8 @@
 		F00ADD6E25E0C90B00BEBD09 /* Avenir-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Avenir-Medium.otf"; sourceTree = "<group>"; };
 		F00ADD6F25E0C90B00BEBD09 /* Avenir-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Avenir-Light.otf"; sourceTree = "<group>"; };
 		F00ADD7025E0C90B00BEBD09 /* Avenir-Roman.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Avenir-Roman.otf"; sourceTree = "<group>"; };
-		F026B37B25E0C04E00B8917D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F026B37B25E0C04E00B8917D /* OnBoardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingView.swift; sourceTree = "<group>"; };
+		F0B1E76D25E0D396005041F6 /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
 		F0BFEA3725E093C100CE0877 /* ProjectOne.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProjectOne.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0BFEA3A25E093C100CE0877 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F0BFEA3C25E093C100CE0877 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -68,6 +70,35 @@
 			path = fonts;
 			sourceTree = "<group>";
 		};
+		F0B1E76A25E0D362005041F6 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				F0BFEA5325E0942500CE0877 /* MasterButton.swift */,
+				F0BFEA5025E0942500CE0877 /* OutlinedButton.swift */,
+				F0BFEA5125E0942500CE0877 /* PageControl.swift */,
+				F0BFEA5525E0942500CE0877 /* PageViewController.swift */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		F0B1E76B25E0D370005041F6 /* extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F0BFEA5425E0942500CE0877 /* Color+Extensions.swift */,
+				F00ADD6825E0C82000BEBD09 /* UIScreen+Extensions.swift */,
+			);
+			path = extensions;
+			sourceTree = "<group>";
+		};
+		F0B1E76C25E0D384005041F6 /* page */ = {
+			isa = PBXGroup;
+			children = (
+				F026B37B25E0C04E00B8917D /* OnBoardingView.swift */,
+				F0B1E76D25E0D396005041F6 /* RegisterView.swift */,
+			);
+			path = page;
+			sourceTree = "<group>";
+		};
 		F0BFEA2E25E093C100CE0877 = {
 			isa = PBXGroup;
 			children = (
@@ -87,20 +118,16 @@
 		F0BFEA3925E093C100CE0877 /* ProjectOne */ = {
 			isa = PBXGroup;
 			children = (
+				F0B1E76C25E0D384005041F6 /* page */,
+				F0B1E76B25E0D370005041F6 /* extensions */,
+				F0B1E76A25E0D362005041F6 /* views */,
 				F00ADD6A25E0C90200BEBD09 /* fonts */,
-				F0BFEA5425E0942500CE0877 /* Color+Extensions.swift */,
-				F0BFEA5325E0942500CE0877 /* MasterButton.swift */,
-				F0BFEA5025E0942500CE0877 /* OutlinedButton.swift */,
-				F0BFEA5125E0942500CE0877 /* PageControl.swift */,
-				F0BFEA5525E0942500CE0877 /* PageViewController.swift */,
 				F0BFEA3A25E093C100CE0877 /* AppDelegate.swift */,
 				F0BFEA3C25E093C100CE0877 /* SceneDelegate.swift */,
 				F0BFEA4025E093C400CE0877 /* Assets.xcassets */,
 				F0BFEA4525E093C400CE0877 /* LaunchScreen.storyboard */,
 				F0BFEA4825E093C400CE0877 /* Info.plist */,
 				F0BFEA4225E093C400CE0877 /* Preview Content */,
-				F026B37B25E0C04E00B8917D /* ContentView.swift */,
-				F00ADD6825E0C82000BEBD09 /* UIScreen+Extensions.swift */,
 			);
 			path = ProjectOne;
 			sourceTree = "<group>";
@@ -185,9 +212,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				F0BFEA5A25E0942600CE0877 /* MasterButton.swift in Sources */,
+				F0B1E76E25E0D396005041F6 /* RegisterView.swift in Sources */,
 				F00ADD6925E0C82000BEBD09 /* UIScreen+Extensions.swift in Sources */,
 				F0BFEA5825E0942600CE0877 /* PageControl.swift in Sources */,
-				F026B37C25E0C04E00B8917D /* ContentView.swift in Sources */,
+				F026B37C25E0C04E00B8917D /* OnBoardingView.swift in Sources */,
 				F0BFEA5B25E0942600CE0877 /* Color+Extensions.swift in Sources */,
 				F0BFEA3B25E093C100CE0877 /* AppDelegate.swift in Sources */,
 				F0BFEA3D25E093C100CE0877 /* SceneDelegate.swift in Sources */,
