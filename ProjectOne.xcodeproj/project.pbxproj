@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		F00ADD6925E0C82000BEBD09 /* UIScreen+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00ADD6825E0C82000BEBD09 /* UIScreen+Extensions.swift */; };
 		F026B37C25E0C04E00B8917D /* OnBoardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F026B37B25E0C04E00B8917D /* OnBoardingView.swift */; };
+		F06952B825E2D21D00CC431F /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F06952B725E2D21D00CC431F /* LoginView.swift */; };
+		F06952BA25E2D60700CC431F /* CheckBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = F06952B925E2D60700CC431F /* CheckBox.swift */; };
+		F06952BC25E2DD6A00CC431F /* SecureUnderlineTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = F06952BB25E2DD6A00CC431F /* SecureUnderlineTextField.swift */; };
 		F0B1E76E25E0D396005041F6 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B1E76D25E0D396005041F6 /* RegisterView.swift */; };
 		F0BFEA3B25E093C100CE0877 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0BFEA3A25E093C100CE0877 /* AppDelegate.swift */; };
 		F0BFEA3D25E093C100CE0877 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0BFEA3C25E093C100CE0877 /* SceneDelegate.swift */; };
@@ -33,6 +36,9 @@
 		F00ADD6F25E0C90B00BEBD09 /* Avenir-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Avenir-Light.otf"; sourceTree = "<group>"; };
 		F00ADD7025E0C90B00BEBD09 /* Avenir-Roman.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Avenir-Roman.otf"; sourceTree = "<group>"; };
 		F026B37B25E0C04E00B8917D /* OnBoardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingView.swift; sourceTree = "<group>"; };
+		F06952B725E2D21D00CC431F /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		F06952B925E2D60700CC431F /* CheckBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckBox.swift; sourceTree = "<group>"; };
+		F06952BB25E2DD6A00CC431F /* SecureUnderlineTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecureUnderlineTextField.swift; sourceTree = "<group>"; };
 		F0B1E76D25E0D396005041F6 /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
 		F0BFEA3725E093C100CE0877 /* ProjectOne.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProjectOne.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0BFEA3A25E093C100CE0877 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -82,7 +88,9 @@
 				F0BFEA5125E0942500CE0877 /* PageControl.swift */,
 				F0BFEA5525E0942500CE0877 /* PageViewController.swift */,
 				F0FAB08D25E15EC800E0B3E2 /* UnderlineTextField.swift */,
+				F06952BB25E2DD6A00CC431F /* SecureUnderlineTextField.swift */,
 				F0FAB08F25E165B800E0B3E2 /* SocialButton.swift */,
+				F06952B925E2D60700CC431F /* CheckBox.swift */,
 			);
 			path = views;
 			sourceTree = "<group>";
@@ -101,6 +109,7 @@
 			children = (
 				F026B37B25E0C04E00B8917D /* OnBoardingView.swift */,
 				F0B1E76D25E0D396005041F6 /* RegisterView.swift */,
+				F06952B725E2D21D00CC431F /* LoginView.swift */,
 			);
 			path = page;
 			sourceTree = "<group>";
@@ -227,6 +236,9 @@
 				F0BFEA3B25E093C100CE0877 /* AppDelegate.swift in Sources */,
 				F0FAB09025E165B800E0B3E2 /* SocialButton.swift in Sources */,
 				F0BFEA3D25E093C100CE0877 /* SceneDelegate.swift in Sources */,
+				F06952BC25E2DD6A00CC431F /* SecureUnderlineTextField.swift in Sources */,
+				F06952BA25E2D60700CC431F /* CheckBox.swift in Sources */,
+				F06952B825E2D21D00CC431F /* LoginView.swift in Sources */,
 				F0BFEA5C25E0942600CE0877 /* PageViewController.swift in Sources */,
 				F0BFEA5725E0942600CE0877 /* OutlinedButton.swift in Sources */,
 			);
