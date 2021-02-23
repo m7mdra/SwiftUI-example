@@ -25,7 +25,6 @@ struct NavigationContent : View {
                     Text(label)
                         .font(.custom("Book", size: 13))
                         .foregroundColor(.white)
-                        .offset(x:-5)
                     Spacer()
                     trailing
                 }.padding()

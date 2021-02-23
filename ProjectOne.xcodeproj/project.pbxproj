@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -26,6 +26,7 @@
 		F0BFEA5A25E0942600CE0877 /* MasterButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0BFEA5325E0942500CE0877 /* MasterButton.swift */; };
 		F0BFEA5B25E0942600CE0877 /* Color+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0BFEA5425E0942500CE0877 /* Color+Extensions.swift */; };
 		F0BFEA5C25E0942600CE0877 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0BFEA5525E0942500CE0877 /* PageViewController.swift */; };
+		F0D3E9E825E5AA1D00CD03BA /* SlidingTabView in Frameworks */ = {isa = PBXBuildFile; productRef = F0D3E9E725E5AA1D00CD03BA /* SlidingTabView */; };
 		F0FAB08E25E15EC800E0B3E2 /* UnderlineTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0FAB08D25E15EC800E0B3E2 /* UnderlineTextField.swift */; };
 		F0FAB09025E165B800E0B3E2 /* SocialButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0FAB08F25E165B800E0B3E2 /* SocialButton.swift */; };
 /* End PBXBuildFile section */
@@ -67,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F0D3E9E825E5AA1D00CD03BA /* SlidingTabView in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -180,6 +182,9 @@
 			dependencies = (
 			);
 			name = ProjectOne;
+			packageProductDependencies = (
+				F0D3E9E725E5AA1D00CD03BA /* SlidingTabView */,
+			);
 			productName = ProjectOne;
 			productReference = F0BFEA3725E093C100CE0877 /* ProjectOne.app */;
 			productType = "com.apple.product-type.application";
@@ -208,6 +213,9 @@
 				Base,
 			);
 			mainGroup = F0BFEA2E25E093C100CE0877;
+			packageReferences = (
+				F0D3E9E625E5AA1D00CD03BA /* XCRemoteSwiftPackageReference "SlidingTabView" */,
+			);
 			productRefGroup = F0BFEA3825E093C100CE0877 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -446,6 +454,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F0D3E9E625E5AA1D00CD03BA /* XCRemoteSwiftPackageReference "SlidingTabView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/QuynhNguyen/SlidingTabView";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F0D3E9E725E5AA1D00CD03BA /* SlidingTabView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F0D3E9E625E5AA1D00CD03BA /* XCRemoteSwiftPackageReference "SlidingTabView" */;
+			productName = SlidingTabView;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F0BFEA2F25E093C100CE0877 /* Project object */;
 }
