@@ -11,33 +11,36 @@ import SwiftUI
 
 struct NavigationContent : View {
     var label:String
+    var leading : AnyView  = Backbutton().toAnyView()
+    var trailing : AnyView = Text("").toAnyView()
     var content: () -> AnyView
-    
+
     var body:some View{
         ZStack(alignment:.top){
             Color.black
             VStack{
                 HStack{
-                    
-                    Button(action: {
-                        
-                    }, label: {
-                        Image("arrow-left")
-                            .foregroundColor(.white)
-                    })
+                    leading
                     Spacer()
                     Text(label)
                         .font(.custom("Book", size: 13))
                         .foregroundColor(.white)
                         .offset(x:-5)
                     Spacer()
+                    trailing
                 }.padding()
                 ZStack{
                     Color.white.cornerRadius(radius: 20,  corners: [.topLeft,.topRight])
                     content()
                 }
             }
-        }.preferredColorScheme(.dark)
+        }
+    }
+}
+struct Backbutton : View {
+    var body: some View{
+        Image("arrow-left")
+                                .foregroundColor(.white)
     }
 }
 struct RegisterView : View {
@@ -85,6 +88,11 @@ struct RegisterView : View {
                 }
             })
         }
+    }
+}
+extension View{
+    func toAnyView() -> AnyView{
+        return AnyView(self)
     }
 }
 struct RegisterView_Previews: PreviewProvider {

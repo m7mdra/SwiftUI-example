@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		F00ADD6925E0C82000BEBD09 /* UIScreen+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00ADD6825E0C82000BEBD09 /* UIScreen+Extensions.swift */; };
 		F026B37C25E0C04E00B8917D /* OnBoardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F026B37B25E0C04E00B8917D /* OnBoardingView.swift */; };
+		F04E9FCF25E53FB800120F88 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F04E9FCE25E53FB800120F88 /* HomeView.swift */; };
 		F06952B825E2D21D00CC431F /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F06952B725E2D21D00CC431F /* LoginView.swift */; };
 		F06952BA25E2D60700CC431F /* CheckBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = F06952B925E2D60700CC431F /* CheckBox.swift */; };
 		F06952BC25E2DD6A00CC431F /* SecureUnderlineTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = F06952BB25E2DD6A00CC431F /* SecureUnderlineTextField.swift */; };
@@ -38,6 +39,7 @@
 		F00ADD6F25E0C90B00BEBD09 /* Avenir-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Avenir-Light.otf"; sourceTree = "<group>"; };
 		F00ADD7025E0C90B00BEBD09 /* Avenir-Roman.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Avenir-Roman.otf"; sourceTree = "<group>"; };
 		F026B37B25E0C04E00B8917D /* OnBoardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingView.swift; sourceTree = "<group>"; };
+		F04E9FCE25E53FB800120F88 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		F06952B725E2D21D00CC431F /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		F06952B925E2D60700CC431F /* CheckBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckBox.swift; sourceTree = "<group>"; };
 		F06952BB25E2DD6A00CC431F /* SecureUnderlineTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecureUnderlineTextField.swift; sourceTree = "<group>"; };
@@ -116,6 +118,7 @@
 				F06952B725E2D21D00CC431F /* LoginView.swift */,
 				F0A8BA6F25E4A30200161A11 /* ResetPasswordView.swift */,
 				F0A8BA7125E4A49300161A11 /* ResetPasswordSentView.swift */,
+				F04E9FCE25E53FB800120F88 /* HomeView.swift */,
 			);
 			path = page;
 			sourceTree = "<group>";
@@ -241,6 +244,7 @@
 				F026B37C25E0C04E00B8917D /* OnBoardingView.swift in Sources */,
 				F0BFEA5B25E0942600CE0877 /* Color+Extensions.swift in Sources */,
 				F0BFEA3B25E093C100CE0877 /* AppDelegate.swift in Sources */,
+				F04E9FCF25E53FB800120F88 /* HomeView.swift in Sources */,
 				F0FAB09025E165B800E0B3E2 /* SocialButton.swift in Sources */,
 				F0BFEA3D25E093C100CE0877 /* SceneDelegate.swift in Sources */,
 				F0A8BA7225E4A49300161A11 /* ResetPasswordSentView.swift in Sources */,
