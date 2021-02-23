@@ -12,6 +12,8 @@
 		F06952B825E2D21D00CC431F /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F06952B725E2D21D00CC431F /* LoginView.swift */; };
 		F06952BA25E2D60700CC431F /* CheckBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = F06952B925E2D60700CC431F /* CheckBox.swift */; };
 		F06952BC25E2DD6A00CC431F /* SecureUnderlineTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = F06952BB25E2DD6A00CC431F /* SecureUnderlineTextField.swift */; };
+		F0A8BA7025E4A30200161A11 /* ResetPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0A8BA6F25E4A30200161A11 /* ResetPasswordView.swift */; };
+		F0A8BA7225E4A49300161A11 /* ResetPasswordSentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0A8BA7125E4A49300161A11 /* ResetPasswordSentView.swift */; };
 		F0B1E76E25E0D396005041F6 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B1E76D25E0D396005041F6 /* RegisterView.swift */; };
 		F0BFEA3B25E093C100CE0877 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0BFEA3A25E093C100CE0877 /* AppDelegate.swift */; };
 		F0BFEA3D25E093C100CE0877 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0BFEA3C25E093C100CE0877 /* SceneDelegate.swift */; };
@@ -39,6 +41,8 @@
 		F06952B725E2D21D00CC431F /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		F06952B925E2D60700CC431F /* CheckBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckBox.swift; sourceTree = "<group>"; };
 		F06952BB25E2DD6A00CC431F /* SecureUnderlineTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecureUnderlineTextField.swift; sourceTree = "<group>"; };
+		F0A8BA6F25E4A30200161A11 /* ResetPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordView.swift; sourceTree = "<group>"; };
+		F0A8BA7125E4A49300161A11 /* ResetPasswordSentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordSentView.swift; sourceTree = "<group>"; };
 		F0B1E76D25E0D396005041F6 /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
 		F0BFEA3725E093C100CE0877 /* ProjectOne.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProjectOne.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0BFEA3A25E093C100CE0877 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -110,6 +114,8 @@
 				F026B37B25E0C04E00B8917D /* OnBoardingView.swift */,
 				F0B1E76D25E0D396005041F6 /* RegisterView.swift */,
 				F06952B725E2D21D00CC431F /* LoginView.swift */,
+				F0A8BA6F25E4A30200161A11 /* ResetPasswordView.swift */,
+				F0A8BA7125E4A49300161A11 /* ResetPasswordSentView.swift */,
 			);
 			path = page;
 			sourceTree = "<group>";
@@ -229,6 +235,7 @@
 				F0BFEA5A25E0942600CE0877 /* MasterButton.swift in Sources */,
 				F0B1E76E25E0D396005041F6 /* RegisterView.swift in Sources */,
 				F00ADD6925E0C82000BEBD09 /* UIScreen+Extensions.swift in Sources */,
+				F0A8BA7025E4A30200161A11 /* ResetPasswordView.swift in Sources */,
 				F0BFEA5825E0942600CE0877 /* PageControl.swift in Sources */,
 				F0FAB08E25E15EC800E0B3E2 /* UnderlineTextField.swift in Sources */,
 				F026B37C25E0C04E00B8917D /* OnBoardingView.swift in Sources */,
@@ -236,6 +243,7 @@
 				F0BFEA3B25E093C100CE0877 /* AppDelegate.swift in Sources */,
 				F0FAB09025E165B800E0B3E2 /* SocialButton.swift in Sources */,
 				F0BFEA3D25E093C100CE0877 /* SceneDelegate.swift in Sources */,
+				F0A8BA7225E4A49300161A11 /* ResetPasswordSentView.swift in Sources */,
 				F06952BC25E2DD6A00CC431F /* SecureUnderlineTextField.swift in Sources */,
 				F06952BA25E2D60700CC431F /* CheckBox.swift in Sources */,
 				F06952B825E2D21D00CC431F /* LoginView.swift in Sources */,
