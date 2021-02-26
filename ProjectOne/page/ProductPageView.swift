@@ -9,7 +9,9 @@
 import Foundation
 import SwiftUI
 import UIKit
+import SlidingTabView
 struct ProductPageView : View {
+    @State var selection = 0
     var body: some View {
         VStack{
             HStack{
@@ -29,22 +31,82 @@ struct ProductPageView : View {
                         .renderingMode(.original)
                 }
                 
-            }.padding().background(Color.white)
-            
-            ZStack(alignment:.top){
-                ProductImageGallery()
-                
-                
-                
-                ScrollView(showsIndicators:false){
-                    Rectangle()
-                        .frame(height: 1000.0)
-                        .foregroundColor(.red)
-                        .cornerRadius(radius: 20,corners: [.topLeft,.topRight])
+            }.padding(.horizontal).background(Color.white)
+            ScrollView(showsIndicators:false){
+                ZStack(alignment:.top){
+                    ProductImageGallery()
+                        .frame(height:300)
+                    
+                    
+                    
+                    
+                    
+                    VStack{
+                        Text("Hagia Sophia\nDeesis Mosaic Vase")
+                            .foregroundColor(.black)
+                            .font(.custom("Heavy", size: 30))
+                            .padding(.top, 42)
+                            .multilineTextAlignment(.center)
+                        
+                        HStack {
+                            
+                            
+                            HStack(spacing:2) {
+                                Image("star_filled")
+                                Image("star_filled")
+                                
+                                Image("star_filled")
+                                Image("star_filled")
+                                Image("star")
+                            }
+                            Text("1.284 Reviews")
+                                .font(.custom("Book", size: 12))
+                                .foregroundColor(Color(hex:"#676870"))
+                            
+                        }
+                        Text("The Virgin Mary in the “Deesis” scene in the south gallery of Hagia Sophia is depicted on the Hagia Sophia Mosaic Vase.")
+                            .foregroundColor(Color(hex:"#676870"))
+                            .font(.custom("book", size: 14))
+                            .padding(.top,11)
+                            .padding(.horizontal,30)
+                            .multilineTextAlignment(.center)
+                        
+                        Text("€3450")
+                            .foregroundColor(Color(hex:"#CC9D76"))
+                                                   .font(.custom("Heavy", size: 30))
+                                                   .padding(.top, 8)
+                                                   .multilineTextAlignment(.center)
+                        SlidingTabView(selection: $selection, tabs: ["Description","Specifications","Reviews"],font: .custom("Heavy", size: 24),activeAccentColor: Color.black)
+                        
+                        HStack{
+                            Image("bookmark")
+                            Button(action:{}){
+                                 Text("Add to cart")
+                                     .foregroundColor(.white)
+                                     .kerning(3)
+                                     .font(.custom("Medium", size: 15))
+                                      
+                                    
+                                     .frame(width:UIScreen.width * 0.52)
+                                  .padding()
+                             }
+                            
+                             .background(Color(hex:"#CC9D76"))
+                                 .cornerRadius(22)
+                            Image("share")
+
+                        }.padding()
+                    }.frame(width:UIScreen.width)
+                        .background(Color.white)
+                        
+                        .cornerRadius(radius: 22,corners: [.topLeft,.topRight])
+                        .offset(x: 0, y: 300)
+                    
+                    
+                    
                     
                 }
-                
-            }
+            }.background(Color.black).edgesIgnoringSafeArea(.bottom)
         }
     }
 }
@@ -72,7 +134,7 @@ struct ProductImageGallery : View{
                 .frame(width:40)
             
         }
-        .frame(width:UIScreen.width,height: 300)
+        .frame(width:UIScreen.width,height: 300).background(Color.black)
     }
 }
 
@@ -80,7 +142,7 @@ struct ProductImage: View {
     var body: some View {
         AnyView(Image("SoteriaVazo")
             .resizable()
-            .scaledToFit().frame(width:UIScreen.width,height:300))
+            .scaledToFit().frame(width:UIScreen.width,height:300)).background(Color.black)
         
     }
 }
