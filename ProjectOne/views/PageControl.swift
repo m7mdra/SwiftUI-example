@@ -21,6 +21,7 @@ struct PageControl: UIViewRepresentable {
         control.currentPageIndicatorTintColor = UIColor(red: 0.80, green: 0.62, blue: 0.46, alpha: 1.00)
         control.pageIndicatorTintColor = UIColor(red: 0.97, green: 0.97, blue: 0.97, alpha: 0.30)
         control.numberOfPages = numberOfPages
+    
         control.addTarget(
             context.coordinator,
             action: #selector(Coordinator.updateCurrentPage(sender:)),

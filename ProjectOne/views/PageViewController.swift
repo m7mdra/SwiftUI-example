@@ -11,7 +11,7 @@ import UIKit
 struct PageViewController<Page: View>: UIViewControllerRepresentable {
     var pages: [Page]
     @Binding var currentPage: Int
-
+    var orientation :UIPageViewController.NavigationOrientation = .horizontal
     func makeCoordinator() -> Coordinator {
         Coordinator(self)
     }
@@ -19,7 +19,7 @@ struct PageViewController<Page: View>: UIViewControllerRepresentable {
     func makeUIViewController(context: Context) -> UIPageViewController {
         let pageViewController = UIPageViewController(
             transitionStyle: .scroll,
-            navigationOrientation: .horizontal)
+            navigationOrientation: orientation)
         pageViewController.dataSource = context.coordinator
         pageViewController.delegate = context.coordinator
 
