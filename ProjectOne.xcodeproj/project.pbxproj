@@ -18,6 +18,7 @@
 		F0843D3C25E6EE9000970085 /* HomeTopDeals.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0843D3B25E6EE9000970085 /* HomeTopDeals.swift */; };
 		F0843D3E25E6EEAC00970085 /* HomeCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0843D3D25E6EEAC00970085 /* HomeCategory.swift */; };
 		F0843D4025E6EEC900970085 /* HomeBrand.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0843D3F25E6EEC900970085 /* HomeBrand.swift */; };
+		F08A81E125F26AAD00D369B6 /* Tabs.swift in Sources */ = {isa = PBXBuildFile; fileRef = F08A81E025F26AAD00D369B6 /* Tabs.swift */; };
 		F0A8BA7025E4A30200161A11 /* ResetPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0A8BA6F25E4A30200161A11 /* ResetPasswordView.swift */; };
 		F0A8BA7225E4A49300161A11 /* ResetPasswordSentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0A8BA7125E4A49300161A11 /* ResetPasswordSentView.swift */; };
 		F0B1E76E25E0D396005041F6 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B1E76D25E0D396005041F6 /* RegisterView.swift */; };
@@ -54,6 +55,7 @@
 		F0843D3B25E6EE9000970085 /* HomeTopDeals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTopDeals.swift; sourceTree = "<group>"; };
 		F0843D3D25E6EEAC00970085 /* HomeCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCategory.swift; sourceTree = "<group>"; };
 		F0843D3F25E6EEC900970085 /* HomeBrand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeBrand.swift; sourceTree = "<group>"; };
+		F08A81E025F26AAD00D369B6 /* Tabs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tabs.swift; sourceTree = "<group>"; };
 		F0A8BA6F25E4A30200161A11 /* ResetPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordView.swift; sourceTree = "<group>"; };
 		F0A8BA7125E4A49300161A11 /* ResetPasswordSentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordSentView.swift; sourceTree = "<group>"; };
 		F0B1E76D25E0D396005041F6 /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
@@ -121,6 +123,7 @@
 				F06952BB25E2DD6A00CC431F /* SecureUnderlineTextField.swift */,
 				F0FAB08F25E165B800E0B3E2 /* SocialButton.swift */,
 				F06952B925E2D60700CC431F /* CheckBox.swift */,
+				F08A81E025F26AAD00D369B6 /* Tabs.swift */,
 			);
 			path = views;
 			sourceTree = "<group>";
@@ -289,6 +292,7 @@
 				F0BFEA5C25E0942600CE0877 /* PageViewController.swift in Sources */,
 				F0BFEA5725E0942600CE0877 /* OutlinedButton.swift in Sources */,
 				F0843D3A25E6EE7400970085 /* HomeView.swift in Sources */,
+				F08A81E125F26AAD00D369B6 /* Tabs.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

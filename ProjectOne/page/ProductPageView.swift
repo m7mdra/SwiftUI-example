@@ -9,7 +9,6 @@
 import Foundation
 import SwiftUI
 import UIKit
-import SlidingTabView
 struct ProductPageView : View {
     @State var selection = 0
     var body: some View {
@@ -39,7 +38,7 @@ struct ProductPageView : View {
                     
                     
                     
-                    
+              
                     
                     VStack{
                         Text("Hagia Sophia\nDeesis Mosaic Vase")
@@ -76,8 +75,9 @@ struct ProductPageView : View {
                                                    .font(.custom("Heavy", size: 30))
                                                    .padding(.top, 8)
                                                    .multilineTextAlignment(.center)
-                        SlidingTabView(selection: $selection, tabs: ["Description","Specifications","Reviews"],font: .custom("Heavy", size: 24),activeAccentColor: Color.black)
-                        
+                             SlidingTabView(selection: $selection, tabs: ["Description","Specifications","Reviews"])
+                        Rectangle()
+                            .frame(height:400)
                         HStack{
                             Image("bookmark")
                             Button(action:{}){
@@ -106,7 +106,7 @@ struct ProductPageView : View {
                     
                     
                 }
-            }.background(Color.black).edgesIgnoringSafeArea(.bottom)
+            }.background(Color.black)
         }
     }
 }
