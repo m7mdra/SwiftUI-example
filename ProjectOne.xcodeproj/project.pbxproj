@@ -10,6 +10,8 @@
 		F00ADD6925E0C82000BEBD09 /* UIScreen+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00ADD6825E0C82000BEBD09 /* UIScreen+Extensions.swift */; };
 		F02377C325E941DE00862CA4 /* ProductPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F02377C225E941DE00862CA4 /* ProductPageView.swift */; };
 		F026B37C25E0C04E00B8917D /* OnBoardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F026B37B25E0C04E00B8917D /* OnBoardingView.swift */; };
+		F0496A212601C60400C644C1 /* DescriptionSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0496A202601C60400C644C1 /* DescriptionSection.swift */; };
+		F0496A232601C91600C644C1 /* ReviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0496A222601C91600C644C1 /* ReviewView.swift */; };
 		F04E9FCF25E53FB800120F88 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F04E9FCE25E53FB800120F88 /* MainView.swift */; };
 		F06952B825E2D21D00CC431F /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F06952B725E2D21D00CC431F /* LoginView.swift */; };
 		F06952BA25E2D60700CC431F /* CheckBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = F06952B925E2D60700CC431F /* CheckBox.swift */; };
@@ -47,6 +49,8 @@
 		F00ADD7025E0C90B00BEBD09 /* Avenir-Roman.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Avenir-Roman.otf"; sourceTree = "<group>"; };
 		F02377C225E941DE00862CA4 /* ProductPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductPageView.swift; sourceTree = "<group>"; };
 		F026B37B25E0C04E00B8917D /* OnBoardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingView.swift; sourceTree = "<group>"; };
+		F0496A202601C60400C644C1 /* DescriptionSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionSection.swift; sourceTree = "<group>"; };
+		F0496A222601C91600C644C1 /* ReviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewView.swift; sourceTree = "<group>"; };
 		F04E9FCE25E53FB800120F88 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		F06952B725E2D21D00CC431F /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		F06952B925E2D60700CC431F /* CheckBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckBox.swift; sourceTree = "<group>"; };
@@ -124,6 +128,8 @@
 				F0FAB08F25E165B800E0B3E2 /* SocialButton.swift */,
 				F06952B925E2D60700CC431F /* CheckBox.swift */,
 				F08A81E025F26AAD00D369B6 /* Tabs.swift */,
+				F0496A202601C60400C644C1 /* DescriptionSection.swift */,
+				F0496A222601C91600C644C1 /* ReviewView.swift */,
 			);
 			path = views;
 			sourceTree = "<group>";
@@ -269,6 +275,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F0496A212601C60400C644C1 /* DescriptionSection.swift in Sources */,
 				F0BFEA5A25E0942600CE0877 /* MasterButton.swift in Sources */,
 				F0B1E76E25E0D396005041F6 /* RegisterView.swift in Sources */,
 				F0843D4025E6EEC900970085 /* HomeBrand.swift in Sources */,
@@ -289,6 +296,7 @@
 				F06952BC25E2DD6A00CC431F /* SecureUnderlineTextField.swift in Sources */,
 				F06952BA25E2D60700CC431F /* CheckBox.swift in Sources */,
 				F06952B825E2D21D00CC431F /* LoginView.swift in Sources */,
+				F0496A232601C91600C644C1 /* ReviewView.swift in Sources */,
 				F0BFEA5C25E0942600CE0877 /* PageViewController.swift in Sources */,
 				F0BFEA5725E0942600CE0877 /* OutlinedButton.swift in Sources */,
 				F0843D3A25E6EE7400970085 /* HomeView.swift in Sources */,

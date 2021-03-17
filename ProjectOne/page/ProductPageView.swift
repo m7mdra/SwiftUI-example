@@ -32,9 +32,10 @@ struct ProductPageView : View {
                 
             }.padding(.horizontal).background(Color.white)
             ScrollView(showsIndicators:false){
-                ZStack(alignment:.top){
+                VStack(){
                     ProductImageGallery()
-                        .frame(height:300)
+                   
+                        
                     
                     
                     
@@ -44,9 +45,9 @@ struct ProductPageView : View {
                         Text("Hagia Sophia\nDeesis Mosaic Vase")
                             .foregroundColor(.black)
                             .font(.custom("Heavy", size: 30))
-                            .padding(.top, 42)
+                            
                             .multilineTextAlignment(.center)
-                        
+                            .padding(.vertical)
                         HStack {
                             
                             
@@ -75,10 +76,51 @@ struct ProductPageView : View {
                                                    .font(.custom("Heavy", size: 30))
                                                    .padding(.top, 8)
                                                    .multilineTextAlignment(.center)
-                             SlidingTabView(selection: $selection, tabs: ["Description","Specifications","Reviews"])
-                        Rectangle()
-                            .frame(height:400)
+                        SlidingTabView(selection: $selection, tabs: ["Description","Specifications","Reviews"],selectionBarColor: Color(hex:"#CC9D76"))
+                        if(selection == 0){
+                            Text("The ewers were used for washing hands and face in Ottoman culture, and their different forms were used in the service of liquid drinks such as sherbet in the mansion, especially in the palace kitchen.\n\n\n")
+                           
+                                .foregroundColor(Color(hex:"#676870"))
+                                .multilineTextAlignment(.center)
+                            .font(.custom("book", size: 14))
+                                .padding(.horizontal,40)
+                                
+                        }
+                        if(selection==1){
+                             VStack{
+                                       DescriptionSection(key: "Case diameter", value: "Diameter: 20 cm Length: 40 cm")
+                                       DescriptionSection(key: "Product Origin", value: "Turkey")
+                                       DescriptionSection(key: "Production method", value: "100% handmade.")
+                                       DescriptionSection(key: "Material", value: "Gold and Glass crafting")
+                                       DescriptionSection(key: "Strap color", value: "Gold Color")
+                                   }
+
+                        }
+                       if(selection==2){
+                        VStack{
+                            ReviewView()
+                            ReviewView()
+                        }
+
+                       }
                         HStack{
+                           Spacer()
+                            Text("Featured products")
+                                .foregroundColor(.black)
+                                .font(.custom("Heavy", size: 24))
+                            Spacer()
+                        }.padding(.horizontal)
+                        Group{
+                       ScrollView(.horizontal,showsIndicators: false) {
+                            HStack(spacing: 10) {
+                                ForEach(0..<CategoryData.list.count) {index in
+                                    
+                                    HomeCategory(data: CategoryData.list[index])
+                                }
+                            }
+                        }
+                    
+                        HStack(alignment: .top, spacing: 0){
                             Image("bookmark")
                             Button(action:{}){
                                  Text("Add to cart")
@@ -95,12 +137,13 @@ struct ProductPageView : View {
                                  .cornerRadius(22)
                             Image("share")
 
-                        }.padding()
+                            }.padding()
+                        }
                     }.frame(width:UIScreen.width)
                         .background(Color.white)
                         
                         .cornerRadius(radius: 22,corners: [.topLeft,.topRight])
-                        .offset(x: 0, y: 300)
+                        
                     
                     
                     
@@ -134,7 +177,9 @@ struct ProductImageGallery : View{
                 .frame(width:40)
             
         }
-        .frame(width:UIScreen.width,height: 300).background(Color.black)
+        .frame(width:UIScreen.width,height: 300)
+    .fixedSize(horizontal: false, vertical: true)
+        .background(Color.black)
     }
 }
 
