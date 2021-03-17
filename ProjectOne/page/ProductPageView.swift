@@ -10,11 +10,14 @@ import Foundation
 import SwiftUI
 import UIKit
 struct ProductPageView : View {
+        @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     @State var selection = 0
     var body: some View {
         VStack{
             HStack{
-                Button(action: {}){
+                Button(action: {
+                    self.presentationMode.wrappedValue.dismiss()
+                }){
                     Image("arrow-left")
                         .foregroundColor(.black)
                 }

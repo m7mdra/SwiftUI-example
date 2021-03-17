@@ -34,8 +34,9 @@ struct HomeView : View {
             ScrollView(.horizontal,showsIndicators: false) {
                 HStack(spacing: 10) {
                     ForEach(0..<CategoryData.list.count) {index in
-                        
-                        HomeCategory(data: CategoryData.list[index])
+                        NavigationLink( destination: ProductPageView ()){
+                            HomeCategory(data: CategoryData.list[index])
+                        }
                     }
                 }
             }

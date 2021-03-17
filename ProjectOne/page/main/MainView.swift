@@ -12,34 +12,37 @@ import SwiftUI
 struct MainPage : View {
     @State var selectedPageIndex = 0
     var body: some View{
-        NavigationContent(label: "STORE",leading:Image("menu").toAnyView(),trailing: Image("search").toAnyView()){
-            VStack{
-                if(self.selectedPageIndex==0){
-                    HomeView()
-                }
-                Spacer()
-                Rectangle()
-                    .frame(width: UIScreen.width, height: 1)
-                    .foregroundColor(Color(hex:"#F7F7F7"))
-                HStack{
-                    BottomNavigationItem(selected: self.selectedPageIndex==0,image: "home", action: {
-                        self.selectedPageIndex=0
-                    })
-                    BottomNavigationItem(selected: self.selectedPageIndex==1,image: "categories", action: {
-                        self.selectedPageIndex=1
-                    })
-                    BottomNavigationItem(selected: self.selectedPageIndex==2,image: "cart", action: {
-                        self.selectedPageIndex=2
-                    })
-                    BottomNavigationItem(selected: self.selectedPageIndex==3,image: "bookmarks", action: {
-                        self.selectedPageIndex=3
-                    })
-                    BottomNavigationItem(selected: self.selectedPageIndex==4,image: "settings", action: {
-                        self.selectedPageIndex=4
-                    })
-                }.padding(.vertical,10)
-            }.toAnyView()
-            
+        
+        NavigationView() {
+            NavigationContent(label: "STORE",leading:Image("menu").toAnyView(),trailing: Image("search").toAnyView()){
+                VStack{
+                    if(self.selectedPageIndex==0){
+                        HomeView()
+                    }
+                    Spacer()
+                    Rectangle()
+                        .frame(width: UIScreen.width, height: 1)
+                        .foregroundColor(Color(hex:"#F7F7F7"))
+                    HStack{
+                        BottomNavigationItem(selected: self.selectedPageIndex==0,image: "home", action: {
+                            self.selectedPageIndex=0
+                        })
+                        BottomNavigationItem(selected: self.selectedPageIndex==1,image: "categories", action: {
+                            self.selectedPageIndex=1
+                        })
+                        BottomNavigationItem(selected: self.selectedPageIndex==2,image: "cart", action: {
+                            self.selectedPageIndex=2
+                        })
+                        BottomNavigationItem(selected: self.selectedPageIndex==3,image: "bookmarks", action: {
+                            self.selectedPageIndex=3
+                        })
+                        BottomNavigationItem(selected: self.selectedPageIndex==4,image: "settings", action: {
+                            self.selectedPageIndex=4
+                        })
+                    }.padding(.vertical,10)
+                }.toAnyView()
+                
+            }
         }
     }
     struct BottomNavigationItem : View{

@@ -13,9 +13,12 @@ struct HomeCategory : View{
     var body: some View{
         VStack{
             Image(data.image)
+                .renderingMode(.original)
                 .resizable()
                 .scaledToFit()
                 .frame(width:138, height:138)
+                
+                
             
             Text(data.title)
                 .foregroundColor(.black)
