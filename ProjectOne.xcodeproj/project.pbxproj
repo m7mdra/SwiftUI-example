@@ -13,6 +13,7 @@
 		F0496A212601C60400C644C1 /* DescriptionSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0496A202601C60400C644C1 /* DescriptionSection.swift */; };
 		F0496A232601C91600C644C1 /* ReviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0496A222601C91600C644C1 /* ReviewView.swift */; };
 		F04E9FCF25E53FB800120F88 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F04E9FCE25E53FB800120F88 /* MainView.swift */; };
+		F059CF5D2602E8890032BF7B /* Navigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F059CF5C2602E8890032BF7B /* Navigation.swift */; };
 		F06952B825E2D21D00CC431F /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F06952B725E2D21D00CC431F /* LoginView.swift */; };
 		F06952BA25E2D60700CC431F /* CheckBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = F06952B925E2D60700CC431F /* CheckBox.swift */; };
 		F06952BC25E2DD6A00CC431F /* SecureUnderlineTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = F06952BB25E2DD6A00CC431F /* SecureUnderlineTextField.swift */; };
@@ -52,6 +53,7 @@
 		F0496A202601C60400C644C1 /* DescriptionSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionSection.swift; sourceTree = "<group>"; };
 		F0496A222601C91600C644C1 /* ReviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewView.swift; sourceTree = "<group>"; };
 		F04E9FCE25E53FB800120F88 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		F059CF5C2602E8890032BF7B /* Navigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navigation.swift; sourceTree = "<group>"; };
 		F06952B725E2D21D00CC431F /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		F06952B925E2D60700CC431F /* CheckBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckBox.swift; sourceTree = "<group>"; };
 		F06952BB25E2DD6A00CC431F /* SecureUnderlineTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecureUnderlineTextField.swift; sourceTree = "<group>"; };
@@ -130,6 +132,7 @@
 				F08A81E025F26AAD00D369B6 /* Tabs.swift */,
 				F0496A202601C60400C644C1 /* DescriptionSection.swift */,
 				F0496A222601C91600C644C1 /* ReviewView.swift */,
+				F059CF5C2602E8890032BF7B /* Navigation.swift */,
 			);
 			path = views;
 			sourceTree = "<group>";
@@ -299,6 +302,7 @@
 				F0496A232601C91600C644C1 /* ReviewView.swift in Sources */,
 				F0BFEA5C25E0942600CE0877 /* PageViewController.swift in Sources */,
 				F0BFEA5725E0942600CE0877 /* OutlinedButton.swift in Sources */,
+				F059CF5D2602E8890032BF7B /* Navigation.swift in Sources */,
 				F0843D3A25E6EE7400970085 /* HomeView.swift in Sources */,
 				F08A81E125F26AAD00D369B6 /* Tabs.swift in Sources */,
 			);
