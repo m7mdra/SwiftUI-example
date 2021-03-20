@@ -25,6 +25,8 @@
 		F0A8BA7025E4A30200161A11 /* ResetPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0A8BA6F25E4A30200161A11 /* ResetPasswordView.swift */; };
 		F0A8BA7225E4A49300161A11 /* ResetPasswordSentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0A8BA7125E4A49300161A11 /* ResetPasswordSentView.swift */; };
 		F0B1E76E25E0D396005041F6 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B1E76D25E0D396005041F6 /* RegisterView.swift */; };
+		F0B543852605A41C00ACB311 /* PhoneVerificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B543842605A41C00ACB311 /* PhoneVerificationView.swift */; };
+		F0B543872605B0B400ACB311 /* VerificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B543862605B0B400ACB311 /* VerificationView.swift */; };
 		F0BFEA3B25E093C100CE0877 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0BFEA3A25E093C100CE0877 /* AppDelegate.swift */; };
 		F0BFEA3D25E093C100CE0877 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0BFEA3C25E093C100CE0877 /* SceneDelegate.swift */; };
 		F0BFEA4125E093C400CE0877 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0BFEA4025E093C400CE0877 /* Assets.xcassets */; };
@@ -65,6 +67,8 @@
 		F0A8BA6F25E4A30200161A11 /* ResetPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordView.swift; sourceTree = "<group>"; };
 		F0A8BA7125E4A49300161A11 /* ResetPasswordSentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordSentView.swift; sourceTree = "<group>"; };
 		F0B1E76D25E0D396005041F6 /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
+		F0B543842605A41C00ACB311 /* PhoneVerificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneVerificationView.swift; sourceTree = "<group>"; };
+		F0B543862605B0B400ACB311 /* VerificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerificationView.swift; sourceTree = "<group>"; };
 		F0BFEA3725E093C100CE0877 /* ProjectOne.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProjectOne.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0BFEA3A25E093C100CE0877 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F0BFEA3C25E093C100CE0877 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -133,6 +137,7 @@
 				F0496A202601C60400C644C1 /* DescriptionSection.swift */,
 				F0496A222601C91600C644C1 /* ReviewView.swift */,
 				F059CF5C2602E8890032BF7B /* Navigation.swift */,
+				F0B543862605B0B400ACB311 /* VerificationView.swift */,
 			);
 			path = views;
 			sourceTree = "<group>";
@@ -156,6 +161,7 @@
 				F0A8BA6F25E4A30200161A11 /* ResetPasswordView.swift */,
 				F0A8BA7125E4A49300161A11 /* ResetPasswordSentView.swift */,
 				F02377C225E941DE00862CA4 /* ProductPageView.swift */,
+				F0B543842605A41C00ACB311 /* PhoneVerificationView.swift */,
 			);
 			path = page;
 			sourceTree = "<group>";
@@ -292,11 +298,13 @@
 				F0BFEA5B25E0942600CE0877 /* Color+Extensions.swift in Sources */,
 				F0BFEA3B25E093C100CE0877 /* AppDelegate.swift in Sources */,
 				F04E9FCF25E53FB800120F88 /* MainView.swift in Sources */,
+				F0B543852605A41C00ACB311 /* PhoneVerificationView.swift in Sources */,
 				F0FAB09025E165B800E0B3E2 /* SocialButton.swift in Sources */,
 				F0BFEA3D25E093C100CE0877 /* SceneDelegate.swift in Sources */,
 				F0A8BA7225E4A49300161A11 /* ResetPasswordSentView.swift in Sources */,
 				F0843D3C25E6EE9000970085 /* HomeTopDeals.swift in Sources */,
 				F06952BC25E2DD6A00CC431F /* SecureUnderlineTextField.swift in Sources */,
+				F0B543872605B0B400ACB311 /* VerificationView.swift in Sources */,
 				F06952BA25E2D60700CC431F /* CheckBox.swift in Sources */,
 				F06952B825E2D21D00CC431F /* LoginView.swift in Sources */,
 				F0496A232601C91600C644C1 /* ReviewView.swift in Sources */,
