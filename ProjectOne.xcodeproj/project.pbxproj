@@ -27,6 +27,8 @@
 		F0B1E76E25E0D396005041F6 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B1E76D25E0D396005041F6 /* RegisterView.swift */; };
 		F0B543852605A41C00ACB311 /* PhoneVerificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B543842605A41C00ACB311 /* PhoneVerificationView.swift */; };
 		F0B543872605B0B400ACB311 /* VerificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B543862605B0B400ACB311 /* VerificationView.swift */; };
+		F0B5438A2605B1CC00ACB311 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B543892605B1CC00ACB311 /* LoadingView.swift */; };
+		F0B5438C2605B3BA00ACB311 /* PhoneVerificationDone.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B5438B2605B3BA00ACB311 /* PhoneVerificationDone.swift */; };
 		F0BFEA3B25E093C100CE0877 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0BFEA3A25E093C100CE0877 /* AppDelegate.swift */; };
 		F0BFEA3D25E093C100CE0877 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0BFEA3C25E093C100CE0877 /* SceneDelegate.swift */; };
 		F0BFEA4125E093C400CE0877 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0BFEA4025E093C400CE0877 /* Assets.xcassets */; };
@@ -69,6 +71,8 @@
 		F0B1E76D25E0D396005041F6 /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
 		F0B543842605A41C00ACB311 /* PhoneVerificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneVerificationView.swift; sourceTree = "<group>"; };
 		F0B543862605B0B400ACB311 /* VerificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerificationView.swift; sourceTree = "<group>"; };
+		F0B543892605B1CC00ACB311 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		F0B5438B2605B3BA00ACB311 /* PhoneVerificationDone.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneVerificationDone.swift; sourceTree = "<group>"; };
 		F0BFEA3725E093C100CE0877 /* ProjectOne.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProjectOne.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0BFEA3A25E093C100CE0877 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F0BFEA3C25E093C100CE0877 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -155,6 +159,7 @@
 			isa = PBXGroup;
 			children = (
 				F0843D3825E6EE4B00970085 /* main */,
+				F0B5438B2605B3BA00ACB311 /* PhoneVerificationDone.swift */,
 				F026B37B25E0C04E00B8917D /* OnBoardingView.swift */,
 				F0B1E76D25E0D396005041F6 /* RegisterView.swift */,
 				F06952B725E2D21D00CC431F /* LoginView.swift */,
@@ -162,6 +167,7 @@
 				F0A8BA7125E4A49300161A11 /* ResetPasswordSentView.swift */,
 				F02377C225E941DE00862CA4 /* ProductPageView.swift */,
 				F0B543842605A41C00ACB311 /* PhoneVerificationView.swift */,
+				F0B543892605B1CC00ACB311 /* LoadingView.swift */,
 			);
 			path = page;
 			sourceTree = "<group>";
@@ -299,6 +305,7 @@
 				F0BFEA3B25E093C100CE0877 /* AppDelegate.swift in Sources */,
 				F04E9FCF25E53FB800120F88 /* MainView.swift in Sources */,
 				F0B543852605A41C00ACB311 /* PhoneVerificationView.swift in Sources */,
+				F0B5438C2605B3BA00ACB311 /* PhoneVerificationDone.swift in Sources */,
 				F0FAB09025E165B800E0B3E2 /* SocialButton.swift in Sources */,
 				F0BFEA3D25E093C100CE0877 /* SceneDelegate.swift in Sources */,
 				F0A8BA7225E4A49300161A11 /* ResetPasswordSentView.swift in Sources */,
@@ -307,6 +314,7 @@
 				F0B543872605B0B400ACB311 /* VerificationView.swift in Sources */,
 				F06952BA25E2D60700CC431F /* CheckBox.swift in Sources */,
 				F06952B825E2D21D00CC431F /* LoginView.swift in Sources */,
+				F0B5438A2605B1CC00ACB311 /* LoadingView.swift in Sources */,
 				F0496A232601C91600C644C1 /* ReviewView.swift in Sources */,
 				F0BFEA5C25E0942600CE0877 /* PageViewController.swift in Sources */,
 				F0BFEA5725E0942600CE0877 /* OutlinedButton.swift in Sources */,
