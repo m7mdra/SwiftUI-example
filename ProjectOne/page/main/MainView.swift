@@ -17,6 +17,10 @@ struct MainPage : View {
             if(self.selectedPageIndex==0){
                 HomeView()
             }
+            if(self.selectedPageIndex == 1){
+                CategoryView()
+            }
+            
             Spacer()
            
             HStack{

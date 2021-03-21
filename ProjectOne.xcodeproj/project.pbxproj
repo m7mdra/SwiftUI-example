@@ -13,6 +13,12 @@
 		F02ECFA826070DC40042AA10 /* OnBoardingFirstPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F02ECFA726070DC40042AA10 /* OnBoardingFirstPage.swift */; };
 		F02ECFAA26070DD20042AA10 /* OnBoardingSecondPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F02ECFA926070DD20042AA10 /* OnBoardingSecondPage.swift */; };
 		F02ECFAC26070DDD0042AA10 /* OnBoardingThirdPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F02ECFAB26070DDD0042AA10 /* OnBoardingThirdPage.swift */; };
+		F02ECFAF26070FAA0042AA10 /* ProductImageGallery.swift in Sources */ = {isa = PBXBuildFile; fileRef = F02ECFAE26070FAA0042AA10 /* ProductImageGallery.swift */; };
+		F02ECFB126070FC70042AA10 /* SpecificationsTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F02ECFB026070FC70042AA10 /* SpecificationsTabView.swift */; };
+		F02ECFB326070FE80042AA10 /* ReviewsTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F02ECFB226070FE80042AA10 /* ReviewsTabView.swift */; };
+		F02ECFB6260710210042AA10 /* DescriptionTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F02ECFB5260710210042AA10 /* DescriptionTabView.swift */; };
+		F02ECFB8260710A40042AA10 /* ProductDetailsTabs.swift in Sources */ = {isa = PBXBuildFile; fileRef = F02ECFB7260710A40042AA10 /* ProductDetailsTabs.swift */; };
+		F02ECFBB260710EF0042AA10 /* CategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F02ECFBA260710EF0042AA10 /* CategoryView.swift */; };
 		F0496A212601C60400C644C1 /* DescriptionSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0496A202601C60400C644C1 /* DescriptionSection.swift */; };
 		F0496A232601C91600C644C1 /* ReviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0496A222601C91600C644C1 /* ReviewView.swift */; };
 		F04E9FCF25E53FB800120F88 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F04E9FCE25E53FB800120F88 /* MainView.swift */; };
@@ -60,6 +66,12 @@
 		F02ECFA726070DC40042AA10 /* OnBoardingFirstPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingFirstPage.swift; sourceTree = "<group>"; };
 		F02ECFA926070DD20042AA10 /* OnBoardingSecondPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingSecondPage.swift; sourceTree = "<group>"; };
 		F02ECFAB26070DDD0042AA10 /* OnBoardingThirdPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingThirdPage.swift; sourceTree = "<group>"; };
+		F02ECFAE26070FAA0042AA10 /* ProductImageGallery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductImageGallery.swift; sourceTree = "<group>"; };
+		F02ECFB026070FC70042AA10 /* SpecificationsTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecificationsTabView.swift; sourceTree = "<group>"; };
+		F02ECFB226070FE80042AA10 /* ReviewsTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewsTabView.swift; sourceTree = "<group>"; };
+		F02ECFB5260710210042AA10 /* DescriptionTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionTabView.swift; sourceTree = "<group>"; };
+		F02ECFB7260710A40042AA10 /* ProductDetailsTabs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailsTabs.swift; sourceTree = "<group>"; };
+		F02ECFBA260710EF0042AA10 /* CategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryView.swift; sourceTree = "<group>"; };
 		F0496A202601C60400C644C1 /* DescriptionSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionSection.swift; sourceTree = "<group>"; };
 		F0496A222601C91600C644C1 /* ReviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewView.swift; sourceTree = "<group>"; };
 		F04E9FCE25E53FB800120F88 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -131,14 +143,44 @@
 			path = onboarding;
 			sourceTree = "<group>";
 		};
-		F0843D3825E6EE4B00970085 /* main */ = {
+		F02ECFAD26070F910042AA10 /* product details */ = {
 			isa = PBXGroup;
 			children = (
-				F04E9FCE25E53FB800120F88 /* MainView.swift */,
+				F02377C225E941DE00862CA4 /* ProductPageView.swift */,
+				F02ECFAE26070FAA0042AA10 /* ProductImageGallery.swift */,
+				F02ECFB026070FC70042AA10 /* SpecificationsTabView.swift */,
+				F02ECFB226070FE80042AA10 /* ReviewsTabView.swift */,
+				F02ECFB5260710210042AA10 /* DescriptionTabView.swift */,
+				F02ECFB7260710A40042AA10 /* ProductDetailsTabs.swift */,
+			);
+			path = "product details";
+			sourceTree = "<group>";
+		};
+		F02ECFB9260710DC0042AA10 /* category */ = {
+			isa = PBXGroup;
+			children = (
+				F02ECFBA260710EF0042AA10 /* CategoryView.swift */,
+			);
+			path = category;
+			sourceTree = "<group>";
+		};
+		F02ECFBC260711200042AA10 /* home */ = {
+			isa = PBXGroup;
+			children = (
 				F0843D3925E6EE7400970085 /* HomeView.swift */,
 				F0843D3B25E6EE9000970085 /* HomeTopDeals.swift */,
 				F0843D3D25E6EEAC00970085 /* HomeCategory.swift */,
 				F0843D3F25E6EEC900970085 /* HomeBrand.swift */,
+			);
+			path = home;
+			sourceTree = "<group>";
+		};
+		F0843D3825E6EE4B00970085 /* main */ = {
+			isa = PBXGroup;
+			children = (
+				F02ECFBC260711200042AA10 /* home */,
+				F02ECFB9260710DC0042AA10 /* category */,
+				F04E9FCE25E53FB800120F88 /* MainView.swift */,
 			);
 			path = main;
 			sourceTree = "<group>";
@@ -175,6 +217,7 @@
 		F0B1E76C25E0D384005041F6 /* page */ = {
 			isa = PBXGroup;
 			children = (
+				F02ECFAD26070F910042AA10 /* product details */,
 				F02ECFA626070D930042AA10 /* onboarding */,
 				F0843D3825E6EE4B00970085 /* main */,
 				F0B5438B2605B3BA00ACB311 /* PhoneVerificationDone.swift */,
@@ -182,7 +225,6 @@
 				F06952B725E2D21D00CC431F /* LoginView.swift */,
 				F0A8BA6F25E4A30200161A11 /* ResetPasswordView.swift */,
 				F0A8BA7125E4A49300161A11 /* ResetPasswordSentView.swift */,
-				F02377C225E941DE00862CA4 /* ProductPageView.swift */,
 				F0B543842605A41C00ACB311 /* PhoneVerificationView.swift */,
 				F0B543892605B1CC00ACB311 /* LoadingView.swift */,
 			);
@@ -312,6 +354,7 @@
 				F0B1E76E25E0D396005041F6 /* RegisterView.swift in Sources */,
 				F0843D4025E6EEC900970085 /* HomeBrand.swift in Sources */,
 				F00ADD6925E0C82000BEBD09 /* UIScreen+Extensions.swift in Sources */,
+				F02ECFB326070FE80042AA10 /* ReviewsTabView.swift in Sources */,
 				F0A8BA7025E4A30200161A11 /* ResetPasswordView.swift in Sources */,
 				F0BFEA5825E0942600CE0877 /* PageControl.swift in Sources */,
 				F0843D3E25E6EEAC00970085 /* HomeCategory.swift in Sources */,
@@ -320,21 +363,26 @@
 				F026B37C25E0C04E00B8917D /* OnBoardingView.swift in Sources */,
 				F02ECFAC26070DDD0042AA10 /* OnBoardingThirdPage.swift in Sources */,
 				F0BFEA5B25E0942600CE0877 /* Color+Extensions.swift in Sources */,
+				F02ECFBB260710EF0042AA10 /* CategoryView.swift in Sources */,
 				F0BFEA3B25E093C100CE0877 /* AppDelegate.swift in Sources */,
+				F02ECFAF26070FAA0042AA10 /* ProductImageGallery.swift in Sources */,
 				F04E9FCF25E53FB800120F88 /* MainView.swift in Sources */,
 				F0B543852605A41C00ACB311 /* PhoneVerificationView.swift in Sources */,
 				F0B5438C2605B3BA00ACB311 /* PhoneVerificationDone.swift in Sources */,
 				F0FAB09025E165B800E0B3E2 /* SocialButton.swift in Sources */,
 				F02ECFAA26070DD20042AA10 /* OnBoardingSecondPage.swift in Sources */,
+				F02ECFB126070FC70042AA10 /* SpecificationsTabView.swift in Sources */,
 				F0BFEA3D25E093C100CE0877 /* SceneDelegate.swift in Sources */,
 				F0A8BA7225E4A49300161A11 /* ResetPasswordSentView.swift in Sources */,
 				F0843D3C25E6EE9000970085 /* HomeTopDeals.swift in Sources */,
+				F02ECFB8260710A40042AA10 /* ProductDetailsTabs.swift in Sources */,
 				F06952BC25E2DD6A00CC431F /* SecureUnderlineTextField.swift in Sources */,
 				F0B543872605B0B400ACB311 /* VerificationView.swift in Sources */,
 				F06952BA25E2D60700CC431F /* CheckBox.swift in Sources */,
 				F06952B825E2D21D00CC431F /* LoginView.swift in Sources */,
 				F0B5438A2605B1CC00ACB311 /* LoadingView.swift in Sources */,
 				F0496A232601C91600C644C1 /* ReviewView.swift in Sources */,
+				F02ECFB6260710210042AA10 /* DescriptionTabView.swift in Sources */,
 				F0BFEA5C25E0942600CE0877 /* PageViewController.swift in Sources */,
 				F0BFEA5725E0942600CE0877 /* OutlinedButton.swift in Sources */,
 				F02ECFA826070DC40042AA10 /* OnBoardingFirstPage.swift in Sources */,

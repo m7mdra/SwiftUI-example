@@ -46,5 +46,12 @@ struct CategoryData {
         CategoryData(image: "soteria_vase", title: "Soteria Vase", price: "€2950"),
         
     ]
+    static var list2:Array<CategoryData> {
+       var newList = Array<CategoryData>()
+        newList.append(contentsOf: list)
+        newList.append(contentsOf: list1)
+
+        return newList.shuffled()
+    }
 }
 
