@@ -21,7 +21,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
         // Create the SwiftUI view that provides the window contents.
 
-        let view = PhoneVerificationDone()
+        let view =  Navigation(content: Text("Hello"),leading: Image("menu").toAnyView(),trailing: Image("search").toAnyView())
 
         // Use a UIHostingController as window root view controller.
         if let windowScene = scene as? UIWindowScene {

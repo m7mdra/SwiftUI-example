@@ -33,17 +33,12 @@ struct ProductPageView : View {
                         .renderingMode(.original)
                 }
                 
-            }.padding(.horizontal).background(Color.white)
+            }.padding(.horizontal)
+                .background(Color.white)
             ScrollView(showsIndicators:false){
-                VStack(){
+                VStack{
                     ProductImageGallery()
-                   
-                        
-                    
-                    
-                    
-              
-                    
+
                     VStack{
                         Text("Hagia Sophia\nDeesis Mosaic Vase")
                             .foregroundColor(.black)
@@ -81,29 +76,15 @@ struct ProductPageView : View {
                                                    .multilineTextAlignment(.center)
                         SlidingTabView(selection: $selection, tabs: ["Description","Specifications","Reviews"],selectionBarColor: Color(hex:"#CC9D76"))
                         if(selection == 0){
-                            Text("The ewers were used for washing hands and face in Ottoman culture, and their different forms were used in the service of liquid drinks such as sherbet in the mansion, especially in the palace kitchen.\n\n\n")
-                           
-                                .foregroundColor(Color(hex:"#676870"))
-                                .multilineTextAlignment(.center)
-                            .font(.custom("book", size: 14))
-                                .padding(.horizontal,40)
+                            DescriptionTabView()
                                 
                         }
                         if(selection==1){
-                             VStack{
-                                       DescriptionSection(key: "Case diameter", value: "Diameter: 20 cm Length: 40 cm")
-                                       DescriptionSection(key: "Product Origin", value: "Turkey")
-                                       DescriptionSection(key: "Production method", value: "100% handmade.")
-                                       DescriptionSection(key: "Material", value: "Gold and Glass crafting")
-                                       DescriptionSection(key: "Strap color", value: "Gold Color")
-                                   }
+                            SpecificationsTabView()
 
                         }
                        if(selection==2){
-                        VStack{
-                            ReviewView()
-                            ReviewView()
-                        }
+                        ReviewsTabView()
 
                        }
                         HStack{
@@ -192,5 +173,37 @@ struct ProductImage: View {
             .resizable()
             .scaledToFit().frame(width:UIScreen.width,height:300)).background(Color.black)
         
+    }
+}
+
+struct SpecificationsTabView: View {
+    var body: some View {
+        VStack{
+            DescriptionSection(key: "Case diameter", value: "Diameter: 20 cm Length: 40 cm")
+            DescriptionSection(key: "Product Origin", value: "Turkey")
+            DescriptionSection(key: "Production method", value: "100% handmade.")
+            DescriptionSection(key: "Material", value: "Gold and Glass crafting")
+            DescriptionSection(key: "Strap color", value: "Gold Color")
+        }
+    }
+}
+
+struct ReviewsTabView: View {
+    var body: some View {
+        VStack{
+            ReviewView()
+            ReviewView()
+        }
+    }
+}
+
+struct DescriptionTabView: View {
+    var body: some View {
+        Text("The ewers were used for washing hands and face in Ottoman culture, and their different forms were used in the service of liquid drinks such as sherbet in the mansion, especially in the palace kitchen.\n\n\n")
+            
+            .foregroundColor(Color(hex:"#676870"))
+            .multilineTextAlignment(.center)
+            .font(.custom("book", size: 14))
+            .padding(.horizontal,40)
     }
 }

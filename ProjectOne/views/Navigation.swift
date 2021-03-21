@@ -10,29 +10,31 @@ import Foundation
 import SwiftUI
 struct Navigation<Content> : View where Content : View {
     var content:Content
+    var leading:AnyView = EmptyView().toAnyView()
+    var trailing:AnyView = EmptyView().toAnyView()
+    var barColor :Color = Color.black
+    
+
     var body: some View{
         NavigationView{
             ZStack{
                 Color.black
                 Color.white.cornerRadius(radius: 20,  corners: [.topLeft,.topRight])
+            
                 content
-            }
-            .navigationBarTitle("Hello",displayMode: .inline)
+            }.padding(.top,4)
+                .background(Color.black)
+            .navigationBarTitle("Store",displayMode: .inline)
                 .navigationBarColor(.black) // This is how you will use it
-                .navigationBarItems(leading: Button(action: {
-                    
-                }, label: {
-                    Image("arrow-left").renderingMode(.original)
-                }))
+                
+                .navigationBarItems(leading: leading,trailing: trailing)
         }
     }
 }
 
 struct Navigation_Previews: PreviewProvider {
     static var previews: some View {
-        Navigation(content: VStack{
-            Text("Hello")
-        })
+        Navigation(content: Text("Hello"),leading: Image("menu").toAnyView(),trailing: Image("search").toAnyView())
     }
 }
 struct NavigationBarModifier: ViewModifier {
@@ -44,7 +46,8 @@ struct NavigationBarModifier: ViewModifier {
         let coloredAppearance = UINavigationBarAppearance()
         coloredAppearance.configureWithTransparentBackground()
         coloredAppearance.backgroundColor = .clear
-        coloredAppearance.titleTextAttributes = [.foregroundColor: UIColor.white]
+        coloredAppearance.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white,
+                                                 NSAttributedString.Key.font : UIFont(name: "Avenir-Book", size: 16)!]
         coloredAppearance.largeTitleTextAttributes = [.foregroundColor: UIColor.white]
         
         UINavigationBar.appearance().standardAppearance = coloredAppearance

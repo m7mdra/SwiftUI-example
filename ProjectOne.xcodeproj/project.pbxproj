@@ -10,6 +10,9 @@
 		F00ADD6925E0C82000BEBD09 /* UIScreen+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00ADD6825E0C82000BEBD09 /* UIScreen+Extensions.swift */; };
 		F02377C325E941DE00862CA4 /* ProductPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F02377C225E941DE00862CA4 /* ProductPageView.swift */; };
 		F026B37C25E0C04E00B8917D /* OnBoardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F026B37B25E0C04E00B8917D /* OnBoardingView.swift */; };
+		F02ECFA826070DC40042AA10 /* OnBoardingFirstPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F02ECFA726070DC40042AA10 /* OnBoardingFirstPage.swift */; };
+		F02ECFAA26070DD20042AA10 /* OnBoardingSecondPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F02ECFA926070DD20042AA10 /* OnBoardingSecondPage.swift */; };
+		F02ECFAC26070DDD0042AA10 /* OnBoardingThirdPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F02ECFAB26070DDD0042AA10 /* OnBoardingThirdPage.swift */; };
 		F0496A212601C60400C644C1 /* DescriptionSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0496A202601C60400C644C1 /* DescriptionSection.swift */; };
 		F0496A232601C91600C644C1 /* ReviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0496A222601C91600C644C1 /* ReviewView.swift */; };
 		F04E9FCF25E53FB800120F88 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F04E9FCE25E53FB800120F88 /* MainView.swift */; };
@@ -54,6 +57,9 @@
 		F00ADD7025E0C90B00BEBD09 /* Avenir-Roman.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Avenir-Roman.otf"; sourceTree = "<group>"; };
 		F02377C225E941DE00862CA4 /* ProductPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductPageView.swift; sourceTree = "<group>"; };
 		F026B37B25E0C04E00B8917D /* OnBoardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingView.swift; sourceTree = "<group>"; };
+		F02ECFA726070DC40042AA10 /* OnBoardingFirstPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingFirstPage.swift; sourceTree = "<group>"; };
+		F02ECFA926070DD20042AA10 /* OnBoardingSecondPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingSecondPage.swift; sourceTree = "<group>"; };
+		F02ECFAB26070DDD0042AA10 /* OnBoardingThirdPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingThirdPage.swift; sourceTree = "<group>"; };
 		F0496A202601C60400C644C1 /* DescriptionSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionSection.swift; sourceTree = "<group>"; };
 		F0496A222601C91600C644C1 /* ReviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewView.swift; sourceTree = "<group>"; };
 		F04E9FCE25E53FB800120F88 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -114,6 +120,17 @@
 			path = fonts;
 			sourceTree = "<group>";
 		};
+		F02ECFA626070D930042AA10 /* onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				F026B37B25E0C04E00B8917D /* OnBoardingView.swift */,
+				F02ECFA726070DC40042AA10 /* OnBoardingFirstPage.swift */,
+				F02ECFA926070DD20042AA10 /* OnBoardingSecondPage.swift */,
+				F02ECFAB26070DDD0042AA10 /* OnBoardingThirdPage.swift */,
+			);
+			path = onboarding;
+			sourceTree = "<group>";
+		};
 		F0843D3825E6EE4B00970085 /* main */ = {
 			isa = PBXGroup;
 			children = (
@@ -158,9 +175,9 @@
 		F0B1E76C25E0D384005041F6 /* page */ = {
 			isa = PBXGroup;
 			children = (
+				F02ECFA626070D930042AA10 /* onboarding */,
 				F0843D3825E6EE4B00970085 /* main */,
 				F0B5438B2605B3BA00ACB311 /* PhoneVerificationDone.swift */,
-				F026B37B25E0C04E00B8917D /* OnBoardingView.swift */,
 				F0B1E76D25E0D396005041F6 /* RegisterView.swift */,
 				F06952B725E2D21D00CC431F /* LoginView.swift */,
 				F0A8BA6F25E4A30200161A11 /* ResetPasswordView.swift */,
@@ -301,12 +318,14 @@
 				F02377C325E941DE00862CA4 /* ProductPageView.swift in Sources */,
 				F0FAB08E25E15EC800E0B3E2 /* UnderlineTextField.swift in Sources */,
 				F026B37C25E0C04E00B8917D /* OnBoardingView.swift in Sources */,
+				F02ECFAC26070DDD0042AA10 /* OnBoardingThirdPage.swift in Sources */,
 				F0BFEA5B25E0942600CE0877 /* Color+Extensions.swift in Sources */,
 				F0BFEA3B25E093C100CE0877 /* AppDelegate.swift in Sources */,
 				F04E9FCF25E53FB800120F88 /* MainView.swift in Sources */,
 				F0B543852605A41C00ACB311 /* PhoneVerificationView.swift in Sources */,
 				F0B5438C2605B3BA00ACB311 /* PhoneVerificationDone.swift in Sources */,
 				F0FAB09025E165B800E0B3E2 /* SocialButton.swift in Sources */,
+				F02ECFAA26070DD20042AA10 /* OnBoardingSecondPage.swift in Sources */,
 				F0BFEA3D25E093C100CE0877 /* SceneDelegate.swift in Sources */,
 				F0A8BA7225E4A49300161A11 /* ResetPasswordSentView.swift in Sources */,
 				F0843D3C25E6EE9000970085 /* HomeTopDeals.swift in Sources */,
@@ -318,6 +337,7 @@
 				F0496A232601C91600C644C1 /* ReviewView.swift in Sources */,
 				F0BFEA5C25E0942600CE0877 /* PageViewController.swift in Sources */,
 				F0BFEA5725E0942600CE0877 /* OutlinedButton.swift in Sources */,
+				F02ECFA826070DC40042AA10 /* OnBoardingFirstPage.swift in Sources */,
 				F059CF5D2602E8890032BF7B /* Navigation.swift in Sources */,
 				F0843D3A25E6EE7400970085 /* HomeView.swift in Sources */,
 				F08A81E125F26AAD00D369B6 /* Tabs.swift in Sources */,

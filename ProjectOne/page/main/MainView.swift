@@ -18,9 +18,7 @@ struct MainPage : View {
                 HomeView()
             }
             Spacer()
-            Rectangle()
-                .frame(width: UIScreen.width, height: 1)
-                .foregroundColor(Color(hex:"#F7F7F7"))
+           
             HStack{
                 BottomNavigationItem(selected: self.selectedPageIndex==0,image: "home", action: {
                     self.selectedPageIndex=0
@@ -37,8 +35,8 @@ struct MainPage : View {
                 BottomNavigationItem(selected: self.selectedPageIndex==4,image: "settings", action: {
                     self.selectedPageIndex=4
                 })
-            }.padding(.vertical,10)
-        })
+            }.padding(.vertical,5)
+        },leading: Image("menu").toAnyView(),trailing: Image("search").toAnyView())
         
         
         
