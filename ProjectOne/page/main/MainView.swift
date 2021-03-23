@@ -65,7 +65,7 @@ struct MainPage : View {
     }
     struct HomeView_Previews: PreviewProvider {
         static var previews: some View {
-            SearchView()
+            MainPage()
         }
     }
 }

@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import SwiftUI
 struct SearchSuggestion : View{
     var body: some View{
         VStack(alignment:.leading){

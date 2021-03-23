@@ -25,6 +25,9 @@
 		F059CF5D2602E8890032BF7B /* Navigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F059CF5C2602E8890032BF7B /* Navigation.swift */; };
 		F0630D4B260A230A002D768D /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0630D4A260A230A002D768D /* SearchView.swift */; };
 		F0630D4D260A232E002D768D /* SearchSuggestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0630D4C260A232E002D768D /* SearchSuggestion.swift */; };
+		F0630D50260A23C4002D768D /* FilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0630D4F260A23C4002D768D /* FilterView.swift */; };
+		F0630D52260A287E002D768D /* Chip.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0630D51260A287E002D768D /* Chip.swift */; };
+		F0630D54260A2F64002D768D /* RangedSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0630D53260A2F64002D768D /* RangedSlider.swift */; };
 		F06952B825E2D21D00CC431F /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F06952B725E2D21D00CC431F /* LoginView.swift */; };
 		F06952BA25E2D60700CC431F /* CheckBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = F06952B925E2D60700CC431F /* CheckBox.swift */; };
 		F06952BC25E2DD6A00CC431F /* SecureUnderlineTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = F06952BB25E2DD6A00CC431F /* SecureUnderlineTextField.swift */; };
@@ -80,6 +83,9 @@
 		F059CF5C2602E8890032BF7B /* Navigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navigation.swift; sourceTree = "<group>"; };
 		F0630D4A260A230A002D768D /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 		F0630D4C260A232E002D768D /* SearchSuggestion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchSuggestion.swift; sourceTree = "<group>"; };
+		F0630D4F260A23C4002D768D /* FilterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterView.swift; sourceTree = "<group>"; };
+		F0630D51260A287E002D768D /* Chip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chip.swift; sourceTree = "<group>"; };
+		F0630D53260A2F64002D768D /* RangedSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RangedSlider.swift; sourceTree = "<group>"; };
 		F06952B725E2D21D00CC431F /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		F06952B925E2D60700CC431F /* CheckBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckBox.swift; sourceTree = "<group>"; };
 		F06952BB25E2DD6A00CC431F /* SecureUnderlineTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecureUnderlineTextField.swift; sourceTree = "<group>"; };
@@ -188,6 +194,14 @@
 			path = search;
 			sourceTree = "<group>";
 		};
+		F0630D4E260A239D002D768D /* filter */ = {
+			isa = PBXGroup;
+			children = (
+				F0630D4F260A23C4002D768D /* FilterView.swift */,
+			);
+			path = filter;
+			sourceTree = "<group>";
+		};
 		F0843D3825E6EE4B00970085 /* main */ = {
 			isa = PBXGroup;
 			children = (
@@ -214,6 +228,8 @@
 				F0496A222601C91600C644C1 /* ReviewView.swift */,
 				F059CF5C2602E8890032BF7B /* Navigation.swift */,
 				F0B543862605B0B400ACB311 /* VerificationView.swift */,
+				F0630D51260A287E002D768D /* Chip.swift */,
+				F0630D53260A2F64002D768D /* RangedSlider.swift */,
 			);
 			path = views;
 			sourceTree = "<group>";
@@ -230,6 +246,7 @@
 		F0B1E76C25E0D384005041F6 /* page */ = {
 			isa = PBXGroup;
 			children = (
+				F0630D4E260A239D002D768D /* filter */,
 				F0630D49260A22F4002D768D /* search */,
 				F02ECFAD26070F910042AA10 /* product details */,
 				F02ECFA626070D930042AA10 /* onboarding */,
@@ -364,6 +381,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F0496A212601C60400C644C1 /* DescriptionSection.swift in Sources */,
+				F0630D52260A287E002D768D /* Chip.swift in Sources */,
 				F0BFEA5A25E0942600CE0877 /* MasterButton.swift in Sources */,
 				F0B1E76E25E0D396005041F6 /* RegisterView.swift in Sources */,
 				F0843D4025E6EEC900970085 /* HomeBrand.swift in Sources */,
@@ -396,10 +414,12 @@
 				F0B543872605B0B400ACB311 /* VerificationView.swift in Sources */,
 				F06952BA25E2D60700CC431F /* CheckBox.swift in Sources */,
 				F06952B825E2D21D00CC431F /* LoginView.swift in Sources */,
+				F0630D54260A2F64002D768D /* RangedSlider.swift in Sources */,
 				F0B5438A2605B1CC00ACB311 /* LoadingView.swift in Sources */,
 				F0496A232601C91600C644C1 /* ReviewView.swift in Sources */,
 				F02ECFB6260710210042AA10 /* DescriptionTabView.swift in Sources */,
 				F0BFEA5C25E0942600CE0877 /* PageViewController.swift in Sources */,
+				F0630D50260A23C4002D768D /* FilterView.swift in Sources */,
 				F0BFEA5725E0942600CE0877 /* OutlinedButton.swift in Sources */,
 				F02ECFA826070DC40042AA10 /* OnBoardingFirstPage.swift in Sources */,
 				F059CF5D2602E8890032BF7B /* Navigation.swift in Sources */,
