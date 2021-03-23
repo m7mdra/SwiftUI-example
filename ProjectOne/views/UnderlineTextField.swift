@@ -13,6 +13,7 @@ struct UnderlineTextField :View {
     @Binding var text: String
     var editingChanged: (Bool)->() = { _ in }
     var commit: ()->() = { }
+    var search : Bool = false
     var body: some View{
         VStack{
             ZStack(alignment:.leading){
@@ -20,13 +21,15 @@ struct UnderlineTextField :View {
                     Text(lable)
                         .font(.custom("Book", size: 16))
                         .foregroundColor(.black)
-                    .padding(.horizontal, 4)
+                        .padding(.horizontal, 4)
                 }
-                TextField("", text: self.$text,onEditingChanged: editingChanged, onCommit: commit)
-                    .font(.custom("Book", size: 16))
-                .padding()
-                
-                
+                HStack{
+                    TextField("", text: self.$text,onEditingChanged: editingChanged, onCommit: commit)
+                        .font(.custom("Book", size: 16))
+                    if(search){
+                        Image("search_black")
+                    }
+                }.padding(12)
             }.padding(.horizontal, 30)
             
             Rectangle()

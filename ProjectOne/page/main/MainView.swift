@@ -11,9 +11,10 @@ import SwiftUI
 
 struct MainPage : View {
     @State var selectedPageIndex = 0
+    
     var body: some View{
         
-        Navigation(content:  VStack{
+        Navigation(title:"Store",content:  VStack{
             if(self.selectedPageIndex==0){
                 HomeView()
             }
@@ -22,7 +23,7 @@ struct MainPage : View {
             }
             
             Spacer()
-           
+            
             HStack{
                 BottomNavigationItem(selected: self.selectedPageIndex==0,image: "home", action: {
                     self.selectedPageIndex=0
@@ -40,7 +41,9 @@ struct MainPage : View {
                     self.selectedPageIndex=4
                 })
             }.padding(.vertical,5)
-        },leading: Image("menu").toAnyView(),trailing: Image("search").toAnyView())
+            },leading: Image("menu").toAnyView(),trailing: NavigationLink( destination: SearchView(),label: {
+                Image("search")
+            }).toAnyView())
         
         
         
@@ -62,9 +65,47 @@ struct MainPage : View {
     }
     struct HomeView_Previews: PreviewProvider {
         static var previews: some View {
-            MainPage()
+            SearchView()
         }
     }
 }
 
 
+struct SearchView : View{
+    @State var navigationBarVisible = true
+    @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
+    var body: some View{
+        VStack {
+            Text("Find your watch")
+                .font(.custom("Heavy", size: 30))
+            Text("Search through more than 1000+ watches")
+                .font(.custom("Book", size: 14))
+            UnderlineTextField(lable:"Search",text: .constant(""),search: true)
+            ScrollView{
+                SearchSuggestion()
+                SearchSuggestion()
+            }
+        }
+        .navigationBarTitle("SEARCH",displayMode: .inline)
+        .navigationBarColor(.black)
+        .navigationBarItems(leading: EmptyView(),trailing: Button(action: {
+            self.presentationMode.wrappedValue.dismiss();
+        }, label: {
+            Image("close")
+        }))
+        
+        
+        
+    }
+}
+struct SearchSuggestion : View{
+    var body: some View{
+        VStack(alignment:.leading){
+            Text("Suggestion title")
+                .font(.custom("Book", size: 16))
+            Text("Suggestion Subtitle")
+                .font(.custom("Book", size: 14))
+            
+        }.padding()
+    }
+}

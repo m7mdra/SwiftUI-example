@@ -9,6 +9,8 @@
 import Foundation
 import SwiftUI
 struct Navigation<Content> : View where Content : View {
+    var title:String
+
     var content:Content
     var leading:AnyView = EmptyView().toAnyView()
     var trailing:AnyView = EmptyView().toAnyView()
@@ -22,9 +24,9 @@ struct Navigation<Content> : View where Content : View {
                 Color.white.cornerRadius(radius: 20,  corners: [.topLeft,.topRight])
             
                 content
-            }.padding(.top,4)
+            }
                 .background(Color.black)
-            .navigationBarTitle("Store",displayMode: .inline)
+                .navigationBarTitle(Text(title),displayMode: .inline)
                 .navigationBarColor(.black) // This is how you will use it
                 
                 .navigationBarItems(leading: leading,trailing: trailing)
@@ -34,7 +36,7 @@ struct Navigation<Content> : View where Content : View {
 
 struct Navigation_Previews: PreviewProvider {
     static var previews: some View {
-        Navigation(content: Text("Hello"),leading: Image("menu").toAnyView(),trailing: Image("search").toAnyView())
+        Navigation(title:"Store",content: Text("Hello"),leading: Image("menu").toAnyView(),trailing: Image("search").toAnyView())
     }
 }
 struct NavigationBarModifier: ViewModifier {
@@ -46,6 +48,7 @@ struct NavigationBarModifier: ViewModifier {
         let coloredAppearance = UINavigationBarAppearance()
         coloredAppearance.configureWithTransparentBackground()
         coloredAppearance.backgroundColor = .clear
+        
         coloredAppearance.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white,
                                                  NSAttributedString.Key.font : UIFont(name: "Avenir-Book", size: 16)!]
         coloredAppearance.largeTitleTextAttributes = [.foregroundColor: UIColor.white]

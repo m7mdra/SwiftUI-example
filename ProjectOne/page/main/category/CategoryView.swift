@@ -41,6 +41,7 @@ struct CategoryView : View {
                     }
                 }
             }.padding(.vertical)
+        
             HStack{
                 Text("Anatolian Civilizations Catalog")
                     .foregroundColor(.black)
