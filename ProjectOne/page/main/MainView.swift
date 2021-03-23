@@ -41,7 +41,7 @@ struct MainPage : View {
                     self.selectedPageIndex=4
                 })
             }.padding(.vertical,5)
-            },leading: Image("menu").toAnyView(),trailing: NavigationLink( destination: SearchView(),label: {
+            },leading: Image("menu").toAnyView(),trailing: NavigationLink( destination: FilterView(),label: {
                 Image("search")
             }).toAnyView())
         
