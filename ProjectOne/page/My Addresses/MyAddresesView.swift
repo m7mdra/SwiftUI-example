@@ -1,5 +1,5 @@
 //
-//  OrderHistoryView.swift
+//  MyAddresesView.swift
 //  ProjectOne
 //
 //  Created by Sharif on 24/03/2021.
@@ -7,23 +7,21 @@
 //
 
 import SwiftUI
-struct OrderHistoryView : View {
+struct MyAddresesView : View {
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
+    
     var body: some View{
         ZStack {
             Color.black
             Color.white.cornerRadius(radius: 20,  corners: [.topLeft,.topRight])
-            ScrollView{
-                HistroyView()
-                HistroyView()
-                HistroyView()
-                HistroyView()
-                HistroyView()
-                HistroyView()
-                HistroyView()
-
+            VStack{
+                AddressView()
+                AddressView()
+                Spacer()
+                MasterButton(action: {}, label: "Add another address".uppercased())
             }
-            .navigationBarTitle("Order History",displayMode: .inline)
+                
+            .navigationBarTitle("My addresses",displayMode: .inline)
             .navigationBarColor(.black)
             .navigationBarBackButtonHidden(true)
             .navigationBarItems(leading: Button(action: {
@@ -35,9 +33,9 @@ struct OrderHistoryView : View {
     }
 }
 
-struct OrderHistoryView_Previews: PreviewProvider {
+struct MyAddresesView_Previews: PreviewProvider {
     static var previews: some View {
-        OrderHistoryView()
+        MyAddresesView()
     }
 }
 

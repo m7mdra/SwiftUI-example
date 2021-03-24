@@ -21,8 +21,10 @@
 		F02ECFBB260710EF0042AA10 /* CategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F02ECFBA260710EF0042AA10 /* CategoryView.swift */; };
 		F037C2CF260BC1E6009C1938 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F037C2CE260BC1E6009C1938 /* SettingsView.swift */; };
 		F037C2D2260BC9C0009C1938 /* OrderHistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F037C2D1260BC9C0009C1938 /* OrderHistoryView.swift */; };
-		F037C2D4260BCFE3009C1938 /* HistoryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F037C2D3260BCFE3009C1938 /* HistoryItem.swift */; };
+		F037C2D4260BCFE3009C1938 /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F037C2D3260BCFE3009C1938 /* HistoryView.swift */; };
 		F037C2D6260BD010009C1938 /* SettingTile.swift in Sources */ = {isa = PBXBuildFile; fileRef = F037C2D5260BD010009C1938 /* SettingTile.swift */; };
+		F037C2DA260BD2E2009C1938 /* MyAddresesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F037C2D9260BD2E2009C1938 /* MyAddresesView.swift */; };
+		F037C2DC260BD486009C1938 /* AddressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F037C2DB260BD486009C1938 /* AddressView.swift */; };
 		F0496A212601C60400C644C1 /* DescriptionSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0496A202601C60400C644C1 /* DescriptionSection.swift */; };
 		F0496A232601C91600C644C1 /* ReviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0496A222601C91600C644C1 /* ReviewView.swift */; };
 		F04E9FCF25E53FB800120F88 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F04E9FCE25E53FB800120F88 /* MainView.swift */; };
@@ -84,8 +86,10 @@
 		F02ECFBA260710EF0042AA10 /* CategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryView.swift; sourceTree = "<group>"; };
 		F037C2CE260BC1E6009C1938 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		F037C2D1260BC9C0009C1938 /* OrderHistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderHistoryView.swift; sourceTree = "<group>"; };
-		F037C2D3260BCFE3009C1938 /* HistoryItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryItem.swift; sourceTree = "<group>"; };
+		F037C2D3260BCFE3009C1938 /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
 		F037C2D5260BD010009C1938 /* SettingTile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingTile.swift; sourceTree = "<group>"; };
+		F037C2D9260BD2E2009C1938 /* MyAddresesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAddresesView.swift; sourceTree = "<group>"; };
+		F037C2DB260BD486009C1938 /* AddressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressView.swift; sourceTree = "<group>"; };
 		F0496A202601C60400C644C1 /* DescriptionSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionSection.swift; sourceTree = "<group>"; };
 		F0496A222601C91600C644C1 /* ReviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewView.swift; sourceTree = "<group>"; };
 		F04E9FCE25E53FB800120F88 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -208,9 +212,18 @@
 			isa = PBXGroup;
 			children = (
 				F037C2D1260BC9C0009C1938 /* OrderHistoryView.swift */,
-				F037C2D3260BCFE3009C1938 /* HistoryItem.swift */,
+				F037C2D3260BCFE3009C1938 /* HistoryView.swift */,
 			);
 			path = "order history";
+			sourceTree = "<group>";
+		};
+		F037C2D7260BD2C4009C1938 /* My Addresses */ = {
+			isa = PBXGroup;
+			children = (
+				F037C2D9260BD2E2009C1938 /* MyAddresesView.swift */,
+				F037C2DB260BD486009C1938 /* AddressView.swift */,
+			);
+			path = "My Addresses";
 			sourceTree = "<group>";
 		};
 		F0630D49260A22F4002D768D /* search */ = {
@@ -284,6 +297,7 @@
 		F0B1E76C25E0D384005041F6 /* page */ = {
 			isa = PBXGroup;
 			children = (
+				F037C2D7260BD2C4009C1938 /* My Addresses */,
 				F037C2D0260BC9AE009C1938 /* order history */,
 				F0630D4E260A239D002D768D /* filter */,
 				F0630D49260A22F4002D768D /* search */,
@@ -421,16 +435,18 @@
 			files = (
 				F0496A212601C60400C644C1 /* DescriptionSection.swift in Sources */,
 				F0630D52260A287E002D768D /* Chip.swift in Sources */,
-				F037C2D4260BCFE3009C1938 /* HistoryItem.swift in Sources */,
+				F037C2D4260BCFE3009C1938 /* HistoryView.swift in Sources */,
 				F0BFEA5A25E0942600CE0877 /* MasterButton.swift in Sources */,
 				F0B1E76E25E0D396005041F6 /* RegisterView.swift in Sources */,
 				F0843D4025E6EEC900970085 /* HomeBrand.swift in Sources */,
 				F00ADD6925E0C82000BEBD09 /* UIScreen+Extensions.swift in Sources */,
+				F037C2DA260BD2E2009C1938 /* MyAddresesView.swift in Sources */,
 				F02ECFB326070FE80042AA10 /* ReviewsTabView.swift in Sources */,
 				F0A8BA7025E4A30200161A11 /* ResetPasswordView.swift in Sources */,
 				F0BFEA5825E0942600CE0877 /* PageControl.swift in Sources */,
 				F0843D3E25E6EEAC00970085 /* HomeCategory.swift in Sources */,
 				F037C2D2260BC9C0009C1938 /* OrderHistoryView.swift in Sources */,
+				F037C2DC260BD486009C1938 /* AddressView.swift in Sources */,
 				F02377C325E941DE00862CA4 /* ProductPageView.swift in Sources */,
 				F0630D4B260A230A002D768D /* SearchView.swift in Sources */,
 				F0FAB08E25E15EC800E0B3E2 /* UnderlineTextField.swift in Sources */,

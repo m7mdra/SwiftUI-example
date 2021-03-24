@@ -21,11 +21,14 @@ struct SettingsView :View {
             Text("ugurates19@gmail.com")
                 .font(.custom("Book", size: 14))
             ScrollView(showsIndicators:false){
-                NavigationLink(destination: OrderHistoryView()){ SettingsTile(title: "Order History"){
-                    
+                NavigationLink(destination: OrderHistoryView()){
+                    SettingsTile(title: "Order History"){
                     }
                 }.accentColor(.black)
-                SettingsTile(title: "My Addresses")
+                NavigationLink(destination: MyAddresesView()){
+                    SettingsTile(title: "My Addresses")
+                }.accentColor(.black)
+                
                 SettingsTile(title: "My Cards")
                 SettingsTile(title: "Vouchers")
                 SettingsTile(title: "Nearby Stores")
