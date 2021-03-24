@@ -19,6 +19,10 @@
 		F02ECFB6260710210042AA10 /* DescriptionTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F02ECFB5260710210042AA10 /* DescriptionTabView.swift */; };
 		F02ECFB8260710A40042AA10 /* ProductDetailsTabs.swift in Sources */ = {isa = PBXBuildFile; fileRef = F02ECFB7260710A40042AA10 /* ProductDetailsTabs.swift */; };
 		F02ECFBB260710EF0042AA10 /* CategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F02ECFBA260710EF0042AA10 /* CategoryView.swift */; };
+		F037C2CF260BC1E6009C1938 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F037C2CE260BC1E6009C1938 /* SettingsView.swift */; };
+		F037C2D2260BC9C0009C1938 /* OrderHistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F037C2D1260BC9C0009C1938 /* OrderHistoryView.swift */; };
+		F037C2D4260BCFE3009C1938 /* HistoryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F037C2D3260BCFE3009C1938 /* HistoryItem.swift */; };
+		F037C2D6260BD010009C1938 /* SettingTile.swift in Sources */ = {isa = PBXBuildFile; fileRef = F037C2D5260BD010009C1938 /* SettingTile.swift */; };
 		F0496A212601C60400C644C1 /* DescriptionSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0496A202601C60400C644C1 /* DescriptionSection.swift */; };
 		F0496A232601C91600C644C1 /* ReviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0496A222601C91600C644C1 /* ReviewView.swift */; };
 		F04E9FCF25E53FB800120F88 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F04E9FCE25E53FB800120F88 /* MainView.swift */; };
@@ -78,6 +82,10 @@
 		F02ECFB5260710210042AA10 /* DescriptionTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionTabView.swift; sourceTree = "<group>"; };
 		F02ECFB7260710A40042AA10 /* ProductDetailsTabs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailsTabs.swift; sourceTree = "<group>"; };
 		F02ECFBA260710EF0042AA10 /* CategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryView.swift; sourceTree = "<group>"; };
+		F037C2CE260BC1E6009C1938 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		F037C2D1260BC9C0009C1938 /* OrderHistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderHistoryView.swift; sourceTree = "<group>"; };
+		F037C2D3260BCFE3009C1938 /* HistoryItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryItem.swift; sourceTree = "<group>"; };
+		F037C2D5260BD010009C1938 /* SettingTile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingTile.swift; sourceTree = "<group>"; };
 		F0496A202601C60400C644C1 /* DescriptionSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionSection.swift; sourceTree = "<group>"; };
 		F0496A222601C91600C644C1 /* ReviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewView.swift; sourceTree = "<group>"; };
 		F04E9FCE25E53FB800120F88 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -187,6 +195,24 @@
 			path = home;
 			sourceTree = "<group>";
 		};
+		F037C2CD260BC1D5009C1938 /* settings and more */ = {
+			isa = PBXGroup;
+			children = (
+				F037C2CE260BC1E6009C1938 /* SettingsView.swift */,
+				F037C2D5260BD010009C1938 /* SettingTile.swift */,
+			);
+			path = "settings and more";
+			sourceTree = "<group>";
+		};
+		F037C2D0260BC9AE009C1938 /* order history */ = {
+			isa = PBXGroup;
+			children = (
+				F037C2D1260BC9C0009C1938 /* OrderHistoryView.swift */,
+				F037C2D3260BCFE3009C1938 /* HistoryItem.swift */,
+			);
+			path = "order history";
+			sourceTree = "<group>";
+		};
 		F0630D49260A22F4002D768D /* search */ = {
 			isa = PBXGroup;
 			children = (
@@ -215,6 +241,7 @@
 		F0843D3825E6EE4B00970085 /* main */ = {
 			isa = PBXGroup;
 			children = (
+				F037C2CD260BC1D5009C1938 /* settings and more */,
 				F06D55D1260AB78700B8771F /* favorite */,
 				F02ECFBC260711200042AA10 /* home */,
 				F02ECFB9260710DC0042AA10 /* category */,
@@ -257,6 +284,7 @@
 		F0B1E76C25E0D384005041F6 /* page */ = {
 			isa = PBXGroup;
 			children = (
+				F037C2D0260BC9AE009C1938 /* order history */,
 				F0630D4E260A239D002D768D /* filter */,
 				F0630D49260A22F4002D768D /* search */,
 				F02ECFAD26070F910042AA10 /* product details */,
@@ -393,6 +421,7 @@
 			files = (
 				F0496A212601C60400C644C1 /* DescriptionSection.swift in Sources */,
 				F0630D52260A287E002D768D /* Chip.swift in Sources */,
+				F037C2D4260BCFE3009C1938 /* HistoryItem.swift in Sources */,
 				F0BFEA5A25E0942600CE0877 /* MasterButton.swift in Sources */,
 				F0B1E76E25E0D396005041F6 /* RegisterView.swift in Sources */,
 				F0843D4025E6EEC900970085 /* HomeBrand.swift in Sources */,
@@ -401,6 +430,7 @@
 				F0A8BA7025E4A30200161A11 /* ResetPasswordView.swift in Sources */,
 				F0BFEA5825E0942600CE0877 /* PageControl.swift in Sources */,
 				F0843D3E25E6EEAC00970085 /* HomeCategory.swift in Sources */,
+				F037C2D2260BC9C0009C1938 /* OrderHistoryView.swift in Sources */,
 				F02377C325E941DE00862CA4 /* ProductPageView.swift in Sources */,
 				F0630D4B260A230A002D768D /* SearchView.swift in Sources */,
 				F0FAB08E25E15EC800E0B3E2 /* UnderlineTextField.swift in Sources */,
@@ -418,6 +448,7 @@
 				F0630D4D260A232E002D768D /* SearchSuggestion.swift in Sources */,
 				F02ECFAA26070DD20042AA10 /* OnBoardingSecondPage.swift in Sources */,
 				F02ECFB126070FC70042AA10 /* SpecificationsTabView.swift in Sources */,
+				F037C2CF260BC1E6009C1938 /* SettingsView.swift in Sources */,
 				F0BFEA3D25E093C100CE0877 /* SceneDelegate.swift in Sources */,
 				F0A8BA7225E4A49300161A11 /* ResetPasswordSentView.swift in Sources */,
 				F0843D3C25E6EE9000970085 /* HomeTopDeals.swift in Sources */,
@@ -430,6 +461,7 @@
 				F0B5438A2605B1CC00ACB311 /* LoadingView.swift in Sources */,
 				F0496A232601C91600C644C1 /* ReviewView.swift in Sources */,
 				F02ECFB6260710210042AA10 /* DescriptionTabView.swift in Sources */,
+				F037C2D6260BD010009C1938 /* SettingTile.swift in Sources */,
 				F0BFEA5C25E0942600CE0877 /* PageViewController.swift in Sources */,
 				F0630D50260A23C4002D768D /* FilterView.swift in Sources */,
 				F0BFEA5725E0942600CE0877 /* OutlinedButton.swift in Sources */,

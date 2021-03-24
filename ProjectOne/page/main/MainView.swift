@@ -26,7 +26,9 @@ struct MainPage : View {
                 FavoriteView()
 
             }
-            
+            if(self.selectedPageIndex == 4){
+                SettingsView()
+            }
             Spacer()
             
             HStack{
@@ -52,7 +54,7 @@ struct MainPage : View {
                     self.title = "SETTINGS & MORE"
 
                 })
-            }.padding(.vertical,5)
+            }.padding(.vertical)
             .navigationBarTitle(title)
             },leading: Image("menu").toAnyView(),trailing: NavigationLink( destination: FilterView(),label: {
                 Image("search")
