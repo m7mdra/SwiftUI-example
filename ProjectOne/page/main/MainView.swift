@@ -11,7 +11,7 @@ import SwiftUI
 
 struct MainPage : View {
     @State var selectedPageIndex = 0
-    
+    @State var title = "STORE"
     var body: some View{
         
         Navigation(title:"Store",content:  VStack{
@@ -20,15 +20,23 @@ struct MainPage : View {
             }
             if(self.selectedPageIndex == 1){
                 CategoryView()
+
+            }
+            if(self.selectedPageIndex==3){
+                FavoriteView()
+
             }
             
             Spacer()
             
             HStack{
                 BottomNavigationItem(selected: self.selectedPageIndex==0,image: "home", action: {
+                    self.title = "STORE"
                     self.selectedPageIndex=0
                 })
                 BottomNavigationItem(selected: self.selectedPageIndex==1,image: "categories", action: {
+                    self.title = "CATEGORIES"
+
                     self.selectedPageIndex=1
                 })
                 BottomNavigationItem(selected: self.selectedPageIndex==2,image: "cart", action: {
@@ -36,11 +44,16 @@ struct MainPage : View {
                 })
                 BottomNavigationItem(selected: self.selectedPageIndex==3,image: "bookmarks", action: {
                     self.selectedPageIndex=3
+                    self.title = "FAVORITES"
+
                 })
                 BottomNavigationItem(selected: self.selectedPageIndex==4,image: "settings", action: {
                     self.selectedPageIndex=4
+                    self.title = "SETTINGS & MORE"
+
                 })
             }.padding(.vertical,5)
+            .navigationBarTitle(title)
             },leading: Image("menu").toAnyView(),trailing: NavigationLink( destination: FilterView(),label: {
                 Image("search")
             }).toAnyView())
