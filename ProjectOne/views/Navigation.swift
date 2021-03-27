@@ -10,23 +10,23 @@ import Foundation
 import SwiftUI
 struct Navigation<Content> : View where Content : View {
     var title:String
-
+    
     var content:Content
     var leading:AnyView = EmptyView().toAnyView()
     var trailing:AnyView = EmptyView().toAnyView()
     var barColor :Color = Color.black
     
-
+    
     var body: some View{
         NavigationView{
             ZStack{
                 Color.black
                 Color.white.cornerRadius(radius: 20,  corners: [.topLeft,.topRight])
-            
+                
                 content
             }
-                .background(Color.black)
-                .navigationBarTitle(Text(title),displayMode: .inline)
+            .background(Color.black)
+            .navigationBarTitle(Text(title),displayMode: .inline)
                 .navigationBarColor(.black) // This is how you will use it
                 
                 .navigationBarItems(leading: leading,trailing: trailing)
@@ -42,16 +42,20 @@ struct Navigation_Previews: PreviewProvider {
 struct NavigationBarModifier: ViewModifier {
     
     var backgroundColor: UIColor?
+    var titleColor: UIColor?
     
-    init( backgroundColor: UIColor?) {
+    
+    init( backgroundColor: UIColor?,titleColor:UIColor) {
         self.backgroundColor = backgroundColor
+        self.titleColor = titleColor
         let coloredAppearance = UINavigationBarAppearance()
         coloredAppearance.configureWithTransparentBackground()
         coloredAppearance.backgroundColor = .clear
         
-        coloredAppearance.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white,
+        coloredAppearance.titleTextAttributes = [NSAttributedString.Key.foregroundColor: titleColor,
                                                  NSAttributedString.Key.font : UIFont(name: "Avenir-Book", size: 16)!]
-        coloredAppearance.largeTitleTextAttributes = [.foregroundColor: UIColor.white]
+        coloredAppearance.largeTitleTextAttributes = [NSAttributedString.Key.foregroundColor: titleColor,
+        NSAttributedString.Key.font : UIFont(name: "Avenir-Book", size: 16)!]
         
         UINavigationBar.appearance().standardAppearance = coloredAppearance
         UINavigationBar.appearance().compactAppearance = coloredAppearance
@@ -76,8 +80,8 @@ struct NavigationBarModifier: ViewModifier {
 }
 extension View {
     
-    func navigationBarColor(_ backgroundColor: UIColor?) -> some View {
-        self.modifier(NavigationBarModifier(backgroundColor: backgroundColor))
+    func navigationBarColor(_ backgroundColor: UIColor?,titleColor:UIColor = .white) -> some View {
+        self.modifier(NavigationBarModifier(backgroundColor: backgroundColor,titleColor: titleColor))
     }
     
 }

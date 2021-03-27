@@ -9,13 +9,18 @@
 import SwiftUI
 struct MyAddresesView : View {
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
-    
+   @State var isActive = false
     var body: some View{
         ZStack {
             Color.black
             Color.white.cornerRadius(radius: 20,  corners: [.topLeft,.topRight])
             VStack{
-                AddressView()
+                NavigationLink(destination: AddAddressView(),isActive:$isActive ){
+                    AddressView{
+                        
+                        self.isActive = true
+                    }
+                }
                 AddressView()
                 Spacer()
                 MasterButton(action: {}, label: "Add another address".uppercased())

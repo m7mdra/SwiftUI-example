@@ -8,6 +8,7 @@
 
 import SwiftUI
 struct AddressView: View {
+    var action:()->Void = {}
     var body: some View {
         VStack(alignment:.leading){
             HStack{
@@ -15,9 +16,14 @@ struct AddressView: View {
                     .font(.custom("Book", size: 14))
                     .foregroundColor(Color(hex:"#676870"))
                 Spacer()
-                Text("Change")
+                
+                Button(action: {
+                    self.action()
+                }, label: {
+                    Text("Change")
                     .font(.custom("Book", size: 14))
                     .foregroundColor(Color(hex:"#cc9d76"))
+                })
             }.padding(.bottom)
             Text("Dereboyu Cad. 23,")
                 .font(.custom("Book", size: 14))
@@ -29,5 +35,12 @@ struct AddressView: View {
             Divider().padding(.vertical,4)
         }.padding(.horizontal,30)
             .padding(.vertical)
+    }
+}
+
+struct AddressView_Previews: PreviewProvider {
+    static var previews: some View {
+        AddressView()
+        
     }
 }

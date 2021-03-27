@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		F00ADD6925E0C82000BEBD09 /* UIScreen+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00ADD6825E0C82000BEBD09 /* UIScreen+Extensions.swift */; };
+		F00AFB52260F16E80019F4A1 /* AddAddressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00AFB51260F16E80019F4A1 /* AddAddressView.swift */; };
 		F02377C325E941DE00862CA4 /* ProductPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F02377C225E941DE00862CA4 /* ProductPageView.swift */; };
 		F026B37C25E0C04E00B8917D /* OnBoardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F026B37B25E0C04E00B8917D /* OnBoardingView.swift */; };
 		F02ECFA826070DC40042AA10 /* OnBoardingFirstPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F02ECFA726070DC40042AA10 /* OnBoardingFirstPage.swift */; };
@@ -73,6 +74,7 @@
 		F00ADD6E25E0C90B00BEBD09 /* Avenir-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Avenir-Medium.otf"; sourceTree = "<group>"; };
 		F00ADD6F25E0C90B00BEBD09 /* Avenir-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Avenir-Light.otf"; sourceTree = "<group>"; };
 		F00ADD7025E0C90B00BEBD09 /* Avenir-Roman.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Avenir-Roman.otf"; sourceTree = "<group>"; };
+		F00AFB51260F16E80019F4A1 /* AddAddressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAddressView.swift; sourceTree = "<group>"; };
 		F02377C225E941DE00862CA4 /* ProductPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductPageView.swift; sourceTree = "<group>"; };
 		F026B37B25E0C04E00B8917D /* OnBoardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingView.swift; sourceTree = "<group>"; };
 		F02ECFA726070DC40042AA10 /* OnBoardingFirstPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingFirstPage.swift; sourceTree = "<group>"; };
@@ -156,6 +158,14 @@
 			path = fonts;
 			sourceTree = "<group>";
 		};
+		F00AFB50260F16AC0019F4A1 /* add address */ = {
+			isa = PBXGroup;
+			children = (
+				F00AFB51260F16E80019F4A1 /* AddAddressView.swift */,
+			);
+			path = "add address";
+			sourceTree = "<group>";
+		};
 		F02ECFA626070D930042AA10 /* onboarding */ = {
 			isa = PBXGroup;
 			children = (
@@ -217,13 +227,13 @@
 			path = "order history";
 			sourceTree = "<group>";
 		};
-		F037C2D7260BD2C4009C1938 /* My Addresses */ = {
+		F037C2D7260BD2C4009C1938 /* my addresses */ = {
 			isa = PBXGroup;
 			children = (
 				F037C2D9260BD2E2009C1938 /* MyAddresesView.swift */,
 				F037C2DB260BD486009C1938 /* AddressView.swift */,
 			);
-			path = "My Addresses";
+			path = "my addresses";
 			sourceTree = "<group>";
 		};
 		F0630D49260A22F4002D768D /* search */ = {
@@ -297,7 +307,8 @@
 		F0B1E76C25E0D384005041F6 /* page */ = {
 			isa = PBXGroup;
 			children = (
-				F037C2D7260BD2C4009C1938 /* My Addresses */,
+				F00AFB50260F16AC0019F4A1 /* add address */,
+				F037C2D7260BD2C4009C1938 /* my addresses */,
 				F037C2D0260BC9AE009C1938 /* order history */,
 				F0630D4E260A239D002D768D /* filter */,
 				F0630D49260A22F4002D768D /* search */,
@@ -479,6 +490,7 @@
 				F02ECFB6260710210042AA10 /* DescriptionTabView.swift in Sources */,
 				F037C2D6260BD010009C1938 /* SettingTile.swift in Sources */,
 				F0BFEA5C25E0942600CE0877 /* PageViewController.swift in Sources */,
+				F00AFB52260F16E80019F4A1 /* AddAddressView.swift in Sources */,
 				F0630D50260A23C4002D768D /* FilterView.swift in Sources */,
 				F0BFEA5725E0942600CE0877 /* OutlinedButton.swift in Sources */,
 				F02ECFA826070DC40042AA10 /* OnBoardingFirstPage.swift in Sources */,
