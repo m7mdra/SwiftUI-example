@@ -12,13 +12,23 @@ struct AddAddressView :  View {
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     var body: some View{
        
-            ZStack(alignment:.bottom){
+        ZStack(){
                 MapView()
+           
                 ZStack{
                   
                     Color.white.cornerRadius(radius: 20,  corners: [.topLeft,.topRight])
-                    
-                }.frame(height:UIScreen.height/2-50)
+                    VStack{
+                        Text("Select your location\nform the map")
+                            .multilineTextAlignment(.center)
+                            .font(.custom("Heavy", size: 30))
+                        Text("Move the pin on the map to find your location\nand select the delivery address.")
+                            .multilineTextAlignment(.center)
+                            .font(.custom("Book", size: 14))
+                    }
+                }.frame(height:UIScreen.height/2-50,alignment: .bottom)
+                
+                
             
             .navigationBarColor(.clear)
             .navigationBarTitle("",displayMode: .inline)
